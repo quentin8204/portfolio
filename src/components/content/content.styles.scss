@@ -1,0 +1,8 @@
+.content {
+    order: -1;
+
+    @media screen and (min-width: 961px) and (min-height: 721px)  {
+        grid-column: 2 / 3;
+        order: 0;
+    }
+}

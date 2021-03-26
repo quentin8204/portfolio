@@ -1,0 +1,286 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+#root {
+
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    background-color: rgba(var(--menu-color), 1);
+  
+    @media screen and (min-width: 961px) and (min-height: 721px)  {
+        grid-template-rows: 1fr;
+
+        grid-template-columns: 12rem 1fr;
+
+        @media screen and (min-width: 961px) {grid-template-columns: 10.5rem 1fr;}
+        @media screen and (min-width: 1201px) {grid-template-columns: 11rem 1fr;}
+        @media screen and (min-width: 1441px) {grid-template-columns: 11.5rem 1fr;}
+        @media screen and (min-width: 1681px) {grid-template-columns: 12rem 1fr;}
+        @media screen and (min-width: 1921px) {grid-template-columns: 13.5rem 1fr;}
+        @media screen and (min-width: 2161px) {grid-template-columns: 15rem 1fr;}
+        @media screen and (min-width: 2401px) {grid-template-columns: 16.5rem 1fr;}
+        @media screen and (min-width: 2641px) {grid-template-columns: 18rem 1fr;}
+        @media screen and (min-width: 2881px) {grid-template-columns: 19.5rem 1fr;}
+        @media screen and (min-width: 3121px) {grid-template-columns: 21rem 1fr;}
+        @media screen and (min-width: 3361px) {grid-template-columns: 22.5rem 1fr;}
+        @media screen and (min-width: 3601px) {grid-template-columns: 24rem 1fr;}
+    }
+}
+
+input, select, textarea, button {
+    font-family:inherit;
+    font-size: inherit;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(var(--contact-color-2), 1);
+}
+
+.mousedown *:focus {
+    outline: 0;
+}
+
+.keydown *:focus {
+    outline-color: rgba(var(--outline-color), 1);
+    outline-style: solid;
+    
+    outline-width: 4px;
+    outline-offset: -4px;
+
+    @media screen and (min-width: 481px) {outline-width: 4px; outline-offset: -4px;}
+    @media screen and (min-width: 721px) {outline-width: 4px; outline-offset: -4px;}
+    @media screen and (min-width: 961px) {outline-width: 5px; outline-offset: -5px;}
+    @media screen and (min-width: 1201px) {outline-width: 6px; outline-offset: -6px;}
+    @media screen and (min-width: 1441px) {outline-width: 7px; outline-offset: -7px;}
+    @media screen and (min-width: 1681px) {outline-width: 8px; outline-offset: -8px;}
+    @media screen and (min-width: 1921px) {outline-width: 9px; outline-offset: -9px;}
+    @media screen and (min-width: 2161px) {outline-width: 10px; outline-offset: -10px;}
+    @media screen and (min-width: 2401px) {outline-width: 11px; outline-offset: -11px;}
+    @media screen and (min-width: 2641px) {outline-width: 12px; outline-offset: -12px;}
+    @media screen and (min-width: 2881px) {outline-width: 13px; outline-offset: -13px;}
+    @media screen and (min-width: 3121px) {outline-width: 14px; outline-offset: -14px;}
+    @media screen and (min-width: 3361px) {outline-width: 15px; outline-offset: -15px;}
+    @media screen and (min-width: 3601px) {outline-width: 16px; outline-offset: -16px;}
+
+
+}
+  
+.light {
+--menu-color: 255,255,255;
+--outline-color: 13, 13, 13;
+
+--home-menu-color: 0, 111, 223;
+--home-color-1: 0, 89, 178;
+--home-color-2: 255, 255, 255;
+--home-color-3: 255, 255, 255;
+--home-transparency: 0.7;
+
+--about-menu-color: 227, 57, 0;
+--about-color-1:182, 46, 0;
+--about-color-2: 255, 222, 210;
+--about-color-3: 255, 255, 255;
+--about-color-4: 93, 23, 0;
+
+--projects-menu-color: 124, 0, 248;
+--projects-color-1:99, 0, 198;
+--projects-color-2: 236, 216, 255;
+--projects-color-3: 255, 255, 255;
+--projects-color-4: 124, 0, 248;
+
+    --blue-project-color-1: 0, 89, 178;
+    --blue-project-color-2: 207, 231, 255;
+    --blue-project-color-3: 255, 255, 255;
+    --blue-project-color-4: 0, 111, 223;
+
+
+--contact-menu-color: 214, 0, 107;
+--contact-color-1: 172, 0, 86;
+--contact-color-2: 255, 213, 244;
+--contact-color-3: 255, 255, 255;
+--contact-color-4: 124, 0, 248;
+
+--dark-mode-menu-color: 128, 128, 128;
+--light-mode-menu-color: 218, 218, 0;
+}
+
+.dark {
+--menu-color: 13,13,13;
+--outline-color: 255, 255, 255;
+
+--home-menu-color: 156, 205, 255;
+--home-color-1: 0, 23, 47;
+--home-color-2: 207, 231, 255;
+--home-color-3: 207, 231, 255;
+--home-transparency: 0.9;
+
+--about-menu-color: 255, 186, 163;
+--about-color-1: 47, 12, 0;
+--about-color-2: 255, 204, 187;
+--about-color-3: 255, 222, 210;
+
+--projects-menu-color: 215, 175, 255;
+--projects-color-1:26, 0, 53;
+--projects-color-2: 226, 196, 255;
+--projects-color-3: 236, 216, 255;
+--projects-color-4: 74, 0, 148;
+
+    --blue-project-color-1: 0, 23, 47;
+    --blue-project-color-2: 182, 218, 255;
+    --blue-project-color-3: 207, 231, 255;
+    --blue-project-color-4: 0, 67, 134;
+
+--contact-menu-color: 255, 166, 211;
+--contact-color-1: 46, 0, 23;
+--contact-color-2: 255, 213, 244;
+--contact-color-3: 255, 213, 234;
+
+--dark-mode-menu-color: 128, 128, 128;
+--light-mode-menu-color: 218, 218, 0;
+
+}
+
+/*
+Color list (luminance)
+
+sky blue #0080ff
+
+#E7F3FF
+#CFE7FF
+#B6DAFF
+#9CCDFF
+#80C0FF
+#62B1FF 
+#41A0FF
+#1A8CFF
+#007AF5
+#006FDF
+#0064C8
+#0059B2
+#004E9C
+#004386
+#003870
+#002D5A
+#002244
+#00172F
+#000D19
+
+red-orange #ff4000
+
+#FFEFE9
+#FFDED2
+#FFCCBB
+#FFBAA3
+#FFA689
+#FF916C
+#FF7A4D
+#FF5D27
+#F93E00
+#E33900
+#CC3300
+#B62E00
+#A02800
+#8A2200
+#731D00
+#5D1700
+#461100
+#2F0C00
+#1A0700
+
+yellow-green #80ff00
+
+#E4FFC9
+#C5FF8A
+#9BFF36
+#7BF600
+#74E700
+#6CD800
+#64C900
+#5DBA00
+#55AB00
+#4E9B00
+#468C00
+#3F7D00
+#376E00
+#2F5F00
+#284F00
+#204000
+#183000
+#102100
+#081000
+
+pink #ff0080
+
+#FFEAF5
+#FFD5EA
+#FFBEDF
+#FFA6D3
+#FF8CC5
+#FF6EB6
+#FF48A4
+#FF0984
+#EC0076
+#D6006B
+#C10060
+#AC0056
+#97004B
+#810041
+#6C0036
+#57002C
+#420021
+#2E0017
+#1C000E
+
+purple #8000ff
+
+#F5ECFF
+#ECD8FF
+#E2C4FF
+#D7AFFF
+#CC99FF
+#C182FF
+#B469FF
+#A54CFF
+#9327FF
+#7C00F8
+#6F00DF
+#6300C6
+#5600AD
+#4A0094
+#3E007B
+#320063
+#25004B
+#1A0035
+#100021
+*/
