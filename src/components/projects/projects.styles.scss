@@ -232,23 +232,23 @@
 
   /*Blue scheme*/
 
-  .project.blue {
+  .project:nth-child(2) {
     color: rgba(var(--blue-project-color-3), 1);
   }
 
-  .project.blue .project-info {
+  .project:nth-child(2) .project-info {
     background-color: rgba(var(--blue-project-color-1), 1);
 
     @media screen and (min-width: 961px) {background-color: rgba(var(--blue-project-color-1), 0.95);}
   }
 
-  .project.blue .technologies .box {
+  .project:nth-child(2) .technologies .box {
     background-color: rgba(var(--blue-project-color-4), 0.9);
   }
-  .project.blue .description {
+  .project:nth-child(2) .description {
     color: rgba(var(--blue-project-color-2), 0.9);
   }
-  .project.blue .demo-code .box {
+  .project:nth-child(2) .demo-code .box {
     border: 2px solid rgba(var(--blue-project-color-2), 1);
 
     &:hover {

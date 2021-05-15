@@ -39,18 +39,16 @@ const App = () => {
 
   }, []);
 
-
-  const homeRef = useRef();
-  const aboutRef = useRef();
-  const projectsRef = useRef();
-  const contactRef = useRef();
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
 
   const homeScroll = () => {homeRef.current.scrollIntoView({ behavior: 'smooth' })}
   const aboutScroll = () => {aboutRef.current.scrollIntoView({ behavior: 'smooth' })}
   const projectsScroll = () => {projectsRef.current.scrollIntoView({ behavior: 'smooth' })}
   const contactScroll = () => {contactRef.current.scrollIntoView({ behavior: 'smooth' })}
 
-  
   return (
     <FormspreeProvider project="1628451151437364529">
       <div className={`App ${darkMode ? 'dark' : 'light'} ${mouseUser ? 'mousedown' : 'keydown'}`}>

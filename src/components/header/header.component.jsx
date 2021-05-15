@@ -8,8 +8,6 @@ import './header.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faAddressCard, faCode, faEnvelope, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
-
-
 const Header = ({ changeColorScheme, colorScheme, homeScroll, aboutScroll, projectsScroll, contactScroll }) => (
   <header className='header'>
     <a className="logo-link" href="https://www.linkedin.com/in/quentin-neal-6b257218a/">

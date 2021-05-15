@@ -12,8 +12,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin  } from '@fortawesome/free-brands-svg-icons';
 
-
-
 const Contact = ({contactRef}) => {
 
   const [state, handleSubmit] = useForm('contactMe');
