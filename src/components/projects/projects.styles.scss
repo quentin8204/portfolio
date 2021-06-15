@@ -30,13 +30,13 @@
       position: relative;
       z-index: 1;
       
-      background: linear-gradient(to top right, rgba(var(--projects-color-1), .95), rgba(var(--projects-color-1b), .95));
+      background: linear-gradient(to top right, rgba(var(--projects-color-1), 1), rgba(var(--projects-color-1b), 1));
       padding: 6.9rem;
       width: 100%;
 
       @media screen and (min-width: 481px) {padding: 7.7rem; width: 100%;}
       @media screen and (min-width: 721px) {padding: 8.6rem; width: 100%;}
-      @media screen and (min-width: 961px) {padding: 9.4rem; width: 50%; /*min-height: 100vh; if I want each project to fill 100% of space*/}
+      @media screen and (min-width: 961px) {padding: 9.4rem; width: 50%; background: linear-gradient(to top right, rgba(var(--projects-color-1), .95), rgba(var(--projects-color-1b), .95)); /*min-height: 100vh; if I want each project to fill 100% of space*/}
       @media screen and (min-width: 1201px) {padding: 10.3rem;}
       @media screen and (min-width: 1441px) {padding: 11.1rem;}
       @media screen and (min-width: 1681px) {padding: 12rem;}

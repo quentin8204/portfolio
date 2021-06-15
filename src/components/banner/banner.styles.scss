@@ -75,7 +75,7 @@
         filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .5));
 
         font-weight: 600;
-        animation: flyFromLeft .5s linear 2s backwards;
+        animation: flyFromLeft .5s ease 2s backwards;
 
         font-size: 4.5rem;
 
@@ -107,7 +107,7 @@
         filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .4));
 
         font-weight: 350;
-        animation: flyFromRight .5s linear 2.5s backwards;
+        animation: flyFromRight .5s ease 2.5s backwards;
 
         font-size: 2.3rem;
         letter-spacing: 0.5rem; 
@@ -147,7 +147,7 @@
         overflow: hidden;
         display: none;
         filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .4));
-        animation: flyFromBottom .5s linear 3s backwards;
+        animation: flyFromBottom .5s ease 3s backwards;
 
         padding: 1.3rem;
         margin-top: 2.3rem;
