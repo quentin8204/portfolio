@@ -26,7 +26,7 @@ const About = ({aboutRef}) => (
     </div>
     <div className="skills">
       <ul className="skills-list">
-        <li className="skill-item "><FontAwesomeIcon className="fa-fw" icon={faCss3Alt} /><span>CSS3</span></li>
+        <li className="skill-item"><FontAwesomeIcon className="fa-fw" icon={faCss3Alt} /><span>CSS3</span></li>
         <li className="skill-item"><FontAwesomeIcon className="fa-fw" icon={faHtml5} /><span>HTML5</span></li>
         <li className="skill-item"><FontAwesomeIcon className="fa-fw" icon={faJs} /><span>Javascript</span></li>
         <li className="skill-item"><FontAwesomeIcon className="fa-fw" icon={faReact} /><span>React</span></li>

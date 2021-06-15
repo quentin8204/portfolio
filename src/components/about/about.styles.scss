@@ -1,9 +1,10 @@
 .about {
   min-height: 100vh;
-  background-color: rgba(var(--about-color-1), 1);
-  color: rgba(var(--about-color-3), 1);
+  //background-color: rgba(var(--about-color-1), 1);
+  //color: rgba(var(--about-color-3), 1);
   display: grid;
   grid-auto-rows: auto;
+  background: linear-gradient(to top right, rgba(var(--about-color-1), 1), rgba(var(--about-color-1b), 1));
 
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -26,10 +27,15 @@
 
   .title {
     font-weight: 600;
+    filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .5));
 
     grid-column: 1 / -1;
     margin: 0 auto;
     font-size: 5.1rem;
+
+    background: linear-gradient(to top right, rgba(var(--about-color-3), 1), rgba(var(--about-color-3b), 1));
+    color: transparent;
+    background-clip: text;
 
     @media screen and (min-width: 481px) {font-size: 5.8rem;}
     @media screen and (min-width: 721px) {font-size: 6.4rem;}
@@ -97,6 +103,7 @@
       position: relative;
       height: auto;
       box-sizing: content-box;
+      filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .4));
 
       margin: 0 auto 3.4rem;
       width: 16rem; 
@@ -176,8 +183,12 @@
 
     .bio-description {
       line-height: 1.7;
-      font-weight: 450;
-      color: rgba(var(--about-color-2), 1);
+      font-weight: 500;
+      //color: rgba(var(--about-color-2), 1);
+      background: linear-gradient(to top right, rgba(var(--about-color-2), 1), rgba(var(--about-color-2b), 1));
+      color: transparent;
+      background-clip: text;
+      
 
       font-size: 1.6rem;
       
@@ -214,11 +225,11 @@
         @media screen and (min-width: 3121px) {margin: 7rem 0 0 0;}
         @media screen and (min-width: 3361px) {margin: 7.5rem 0 0 0;}
         @media screen and (min-width: 3601px) {margin: 8rem 0 0 0;}
+      }
 
-        &::selection {
-          background-color: rgba(var(--about-color-3), 1);
-          color:  rgba(var(--about-color-1), 1);
-        }
+      p::selection {
+        background-color: rgba(var(--about-color-3), 1);
+        color:  rgba(var(--about-color-1), 1);
       }
     }
   }
@@ -276,6 +287,8 @@
 
         svg {
           font-size: 2.2rem;
+          color: rgba(var(--about-color-3), 1);
+          filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .4));
 
           @media screen and (min-width: 241px) {font-size: 2.5rem;}
           @media screen and (min-width: 481px) {font-size: 2.8rem;}
@@ -295,8 +308,10 @@
         }
 
         span {
-          font-weight: 450;
-          color: rgba(var(--about-color-2), 1);
+          font-weight: 500;
+          background: linear-gradient(to top right, rgba(var(--about-color-2), 1), rgba(var(--about-color-2b), 1));
+          color: transparent;
+          background-clip: text;
           
           font-size: .9rem;
           margin: 1rem 0 0 0;
@@ -318,7 +333,7 @@
           @media screen and (min-width: 3601px) {font-size: 3.4rem; margin: 0 0 0 4rem;}
 
           &::selection {
-            background-color: rgba(var(--about-color-1), 1);
+            background-color: rgba(var(--about-color-3), 1);
             color:  rgba(var(--about-color-1), 1);
           }
         }

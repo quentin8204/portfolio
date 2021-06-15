@@ -1,7 +1,17 @@
+@keyframes fadeInMessage {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 .contact {
   min-height: 100vh;
-  background-color: rgba(var(--contact-color-1), 1);
-  color: rgba(var(--contact-color-3), 1);
+  //background-color: rgba(var(--contact-color-1), 1);
+  //color: rgba(var(--contact-color-3), 1);
+  background: linear-gradient(to top right, rgba(var(--contact-color-1), 1), rgba(var(--contact-color-1b), 1));
   display: grid;
   grid-auto-rows: auto;
 
@@ -26,10 +36,14 @@
 
   .title {
     font-weight: 600;
+    filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .5));
 
     grid-column: 1 / -1;
     margin: 0 auto;
     font-size: 4.5rem;
+    background: linear-gradient(to top right, rgba(var(--contact-color-3), 1), rgba(var(--contact-color-3b), 1));
+    color: transparent;
+    background-clip: text;
 
     @media screen and (min-width: 481px) {font-size: 5.8rem;}
     @media screen and (min-width: 721px) {font-size: 6.4rem;}
@@ -45,6 +59,11 @@
     @media screen and (min-width: 3121px) {font-size: 15.8rem;}
     @media screen and (min-width: 3361px) {font-size: 16.9rem;}
     @media screen and (min-width: 3601px) {font-size: 18rem;}
+
+    &::selection {
+      background-color: rgba(var(--contact-color-3), 1);
+      color:  rgba(var(--contact-color-1), 1);
+    }
   }
 
   .contact-form {
@@ -87,7 +106,10 @@
 
       label {
         font-weight: 450;
-        color: rgba(var(--contact-color-2), 1);
+        //color: rgba(var(--contact-color-2), 1);
+        background: linear-gradient(to top right, rgba(var(--contact-color-2), 1), rgba(var(--contact-color-2b), 1));
+        color: transparent;
+        background-clip: text;
 
         font-size: 1.6rem;
 
@@ -105,11 +127,22 @@
         @media screen and (min-width: 3121px) {font-size: 3.7rem;}
         @media screen and (min-width: 3361px) {font-size: 3.9rem;}
         @media screen and (min-width: 3601px) {font-size: 4.2rem;}
+
+        &::selection {
+          background-color: rgba(var(--contact-color-3), 1);
+          color:  rgba(var(--contact-color-1), 1);
+        }
+
+        span::selection {
+          background-color: rgba(var(--contact-color-3), 1);
+          color:  rgba(var(--contact-color-1), 1);
+        }
       }
 
       input {
 
-        background-color: rgba(var(--contact-color-2), 1);
+        //background-color: rgba(var(--contact-color-2), 1);
+        background: linear-gradient(to top right, rgba(var(--contact-color-2), 1), rgba(var(--contact-color-2b), 1));
         border: none;
         width: 100%;
 
@@ -135,7 +168,10 @@
 
       .email-validator {
         font-weight: 450;
-        color: rgba(var(--contact-color-2), 1);
+        //color: rgba(var(--contact-color-2), 1);
+        background: linear-gradient(to top right, rgba(var(--contact-color-2), 1), rgba(var(--contact-color-2b), 1));
+        color: transparent;
+        background-clip: text;
 
         font-size: 1.6rem;
 
@@ -151,7 +187,8 @@
       }
 
       textarea {
-        background-color: rgba(var(--contact-color-2), 1);
+        //background-color: rgba(var(--contact-color-2), 1);
+        background: linear-gradient(to top right, rgba(var(--contact-color-2), 1), rgba(var(--contact-color-2b), 1));
         border: none;
         width: 100%;
 
@@ -186,6 +223,7 @@
         border: 2px solid rgba(var(--contact-color-2), 1);
         font-size: 1.6rem;
         margin-left: 0.6rem;
+        filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .5));
 
         @media screen and (min-width: 481px) {font-size: 1.6rem; padding: 1.1rem; border: 2px solid rgba(var(--contact-color-2), 1); margin-left: 0.6rem;}
         @media screen and (min-width: 721px) {font-size: 1.7rem; padding: 1.2rem; border: 2px solid rgba(var(--contact-color-2), 1); margin-left: 0.7rem;}
@@ -202,8 +240,14 @@
         @media screen and (min-width: 3361px) {font-size: 3.4rem; padding: 3.2rem; border: 4px solid rgba(var(--contact-color-2), 1); margin-left: 1.9rem;}
         @media screen and (min-width: 3601px) {font-size: 3.6rem; padding: 3.4rem; border: 4px solid rgba(var(--contact-color-2), 1); margin-left: 2rem;}
 
+        &::selection {
+          background-color: rgba(var(--contact-color-3), 1);
+          color:  rgba(var(--contact-color-1), 1);
+        }
+
         &:hover {
-          background-color: rgba(var(--contact-color-2), 1);
+          //background-color: rgba(var(--contact-color-2), 1);
+          background: linear-gradient(to top right, rgba(var(--contact-color-2), 1), rgba(var(--contact-color-2b), 1));
           color: rgba(var(--contact-color-1), 1);
           cursor: pointer;
         }
@@ -229,10 +273,14 @@
     @media screen and (min-width: 3361px) {margin: 11.3rem 0 0 11.3rem;}
     @media screen and (min-width: 3601px) {margin: 12rem 0 0 12rem;}
 
+    
+
     .contact-description {
       line-height: 1.7;
       font-weight: 450;
-      color: rgba(var(--contact-color-2), 1);
+      background: linear-gradient(to top right, rgba(var(--contact-color-2), 1), rgba(var(--contact-color-2b), 1));
+      color: transparent;
+      background-clip: text;
 
       font-size: 1.6rem;
 
@@ -250,6 +298,11 @@
       @media screen and (min-width: 3121px) {font-size: 3.7rem;}
       @media screen and (min-width: 3361px) {font-size: 3.9rem;}
       @media screen and (min-width: 3601px) {font-size: 4.2rem;}
+
+      &::selection {
+        background-color: rgba(var(--contact-color-3), 1);
+        color:  rgba(var(--contact-color-1), 1);
+      }
     }
     .contact-links {
       list-style-type: none;
@@ -276,27 +329,34 @@
         @media screen and (min-width: 3601px) {margin: 8rem 0 0 0;}
 
         a span {
-          border-bottom: 4px solid;
+          border-bottom: 4px solid rgba(var(--contact-color-2), 1);
 
-          @media screen and (min-width: 481px) {border-bottom: 2px solid;}
-          @media screen and (min-width: 721px) {border-bottom: 2px solid;}
-          @media screen and (min-width: 961px) {border-bottom: 3px solid;}
-          @media screen and (min-width: 1201px) {border-bottom: 3px solid;}
-          @media screen and (min-width: 1441px) {border-bottom: 4px solid;}
-          @media screen and (min-width: 1681px) {border-bottom: 4px solid;}
-          @media screen and (min-width: 1921px) {border-bottom: 5px solid;}
-          @media screen and (min-width: 2161px) {border-bottom: 5px solid;}
-          @media screen and (min-width: 2401px) {border-bottom: 6px solid;}
-          @media screen and (min-width: 2641px) {border-bottom: 6px solid;}
-          @media screen and (min-width: 2881px) {border-bottom: 7px solid;}
-          @media screen and (min-width: 3121px) {border-bottom: 7px solid;}
-          @media screen and (min-width: 3361px) {border-bottom: 8px solid;}
-          @media screen and (min-width: 3601px) {border-bottom: 8px solid;}
+          @media screen and (min-width: 481px) {border-bottom: 2px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 721px) {border-bottom: 2px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 961px) {border-bottom: 3px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 1201px) {border-bottom: 3px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 1441px) {border-bottom: 4px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 1681px) {border-bottom: 4px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 1921px) {border-bottom: 5px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 2161px) {border-bottom: 5px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 2401px) {border-bottom: 6px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 2641px) {border-bottom: 6px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 2881px) {border-bottom: 7px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 3121px) {border-bottom: 7px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 3361px) {border-bottom: 8px solid rgba(var(--contact-color-2), 1);}
+          @media screen and (min-width: 3601px) {border-bottom: 8px solid rgba(var(--contact-color-2), 1);}
+
+          &::selection {
+            background-color: rgba(var(--contact-color-3), 1);
+            color:  rgba(var(--contact-color-1), 1);
+          }
         }
 
         svg {
           font-size: 2.3rem;
           margin: 0 0.6rem 0 0;
+          color: rgba(var(--contact-color-3), 1);
+          filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .4));
 
           @media screen and (min-width: 481px) {font-size: 2.6rem; margin: 0 0.6rem 0 0;}
           @media screen and (min-width: 721px) {font-size: 2.9rem; margin: 0 0.7rem 0 0;}
@@ -317,7 +377,10 @@
 
         span {
           font-weight: 450;
-          color: rgba(var(--contact-color-2), 1);
+          //color: rgba(var(--contact-color-2), 1);
+          background: linear-gradient(to top right, rgba(var(--contact-color-2), 1), rgba(var(--contact-color-2b), 1));
+          color: transparent;
+          background-clip: text;
 
           font-size: 1.4rem;
 
@@ -335,6 +398,11 @@
           @media screen and (min-width: 3121px) {font-size: 3rem;}
           @media screen and (min-width: 3361px) {font-size: 3.2rem;}
           @media screen and (min-width: 3601px) {font-size: 3.4rem;}
+
+          &::selection {
+            background-color: rgba(var(--contact-color-3), 1);
+            color:  rgba(var(--contact-color-1), 1);
+          }
         }
       }
     }
@@ -346,7 +414,8 @@
 
 .feedback {
   height: 100vh;
-  background-color: rgba(var(--contact-color-1), 1);
+  //background-color: rgba(var(--contact-color-1), 1);
+  background: linear-gradient(to top right, rgba(var(--contact-color-1), 1), rgba(var(--contact-color-1b), 1));
   color: rgba(var(--contact-color-3), 1);
   display: flex;
   flex-direction: column;
@@ -355,7 +424,12 @@
   text-align: center;
 
     .title {
+      animation: fadeInMessage 4s ease;
+      filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .5));
       font-weight: 600;
+      background: linear-gradient(to top right, rgba(var(--contact-color-3), 1), rgba(var(--contact-color-3b), 1));
+      color: transparent;
+      background-clip: text;
 
       font-size: 5.1rem;
 
@@ -373,11 +447,22 @@
       @media screen and (min-width: 3121px) {font-size: 15.8rem;}
       @media screen and (min-width: 3361px) {font-size: 16.9rem;}
       @media screen and (min-width: 3601px) {font-size: 18rem;}
+
+      &::selection {
+        background-color: rgba(var(--contact-color-3), 1);
+        color:  rgba(var(--contact-color-1), 1);
+      }
+
+      
     }
 
     .description {
+      animation: fadeInMessage 4s ease;
       line-height: 1.7;
       font-weight: 450;
+      background: linear-gradient(to top right, rgba(var(--contact-color-2), 1), rgba(var(--contact-color-2b), 1));
+      color: transparent;
+      background-clip: text;
 
       font-size: 1.6rem;
       margin: 2.3rem 0 0 0;
@@ -396,5 +481,10 @@
       @media screen and (min-width: 3121px) {font-size: 3.7rem;margin: 7rem 0 0 0;}
       @media screen and (min-width: 3361px) {font-size: 3.9rem;margin: 7.5rem 0 0 0;}
       @media screen and (min-width: 3601px) {font-size: 4.2rem;margin: 8rem 0 0 0;}
+
+      &::selection {
+        background-color: rgba(var(--contact-color-3), 1);
+        color:  rgba(var(--contact-color-1), 1);
+      }
     }
   }

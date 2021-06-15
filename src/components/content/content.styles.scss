@@ -1,4 +1,14 @@
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
 .content {
+    animation: fadeInContent 1s ease 1.5s backwards;
     order: -1;
 
     @media screen and (min-width: 961px) and (min-height: 721px)  {

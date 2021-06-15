@@ -109,7 +109,7 @@ const Projects = ({projectsRef}) => {
           <div className='title'>{title}</div>
           <div className='technologies'>
           {technologies.map((technology, index) => (
-            <div key={index} className='box'>{technology}</div>
+            <div key={index} className='box'><span>{technology}</span></div>
           ))}
           </div>
           <div className='description' dangerouslySetInnerHTML={{__html: description}} />

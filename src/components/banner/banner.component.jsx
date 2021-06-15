@@ -43,7 +43,9 @@ const Banner = ({homeRef, projectsScroll}) => (
       <div className="heading">
         <h1 className="name">Quentin Neal</h1>
         <div className="description">Software Engineer</div>
-        <a className="projects-button" onClick={projectsScroll} href="#projects">Go To Projects</a>
+        <a className="projects-button" onClick={projectsScroll} href="#projects">
+        <span>Go To Projects</span>
+        </a>
       </div>
     </div>
     </Div100vh>
