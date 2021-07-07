@@ -18,13 +18,10 @@ const App = () => {
   const [mouseUser, setMouseUser] = useState(false);
 
   // Intro animations
-  useEffect(() => {
-    window.addEventListener("load", startAnimation);
 
-    return () => {
-      window.removeEventListener("load", startAnimation);
-    };
-  }, []);
+  useEffect(() => {
+    if (typeof window !== `undefined`) { window.addEventListener("load", startAnimation) }
+ }, []);
 
   const startAnimation = () => {
        setAnimation(true);
@@ -70,7 +67,7 @@ const App = () => {
   return (
     <FormspreeProvider project="1628451151437364529">
       {animation
-        ? null
+        ? undefined
         : <div className={`spinner ${darkMode ? 'dark' : 'light'} ${darkMode ? 'spinner-dark' : 'spinner-light'}`}><div className='spinner-object'></div></div>
       }
       <div className={`App ${darkMode ? 'dark' : 'light'} ${mouseUser ? 'mousedown' : 'keydown'}`}>
