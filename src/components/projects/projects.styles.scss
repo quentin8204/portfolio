@@ -51,7 +51,7 @@
 
       .title {
         font-weight: 600;
-        background: linear-gradient(to top right, rgba(var(--projects-color-3), 1), rgba(var(--projects-color-3b), 1));
+        background: linear-gradient(to top right, rgba(var(--projects-color-2), 1), rgba(var(--projects-color-2b), 1));
         color: transparent;
         background-clip: text;
         filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .5));
@@ -74,7 +74,7 @@
         @media screen and (min-width: 3601px) {font-size: 18rem;}
 
         &::selection {
-          background-color: rgba(var(--projects-color-3), 1);
+          background-color: rgba(var(--projects-color-2), 1);
           color:  rgba(var(--projects-color-1), 1);
         }
       }
@@ -110,20 +110,20 @@
             margin-right: 0;
           }
 
-          @media screen and (min-width: 481px) {font-size: 1.7rem; padding: 0.6rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.6rem 0.6rem 0 0;}
-          @media screen and (min-width: 721px) {font-size: 1.7rem; padding: 0.7rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.7rem 0.7rem 0 0;}
-          @media screen and (min-width: 961px) {font-size: 1.8rem; padding: 0.8rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.8rem 0.8rem 0 0;}
-          @media screen and (min-width: 1201px) {font-size: 1.9rem; padding: 0.9rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.9rem 0.9rem 0 0;}
-          @media screen and (min-width: 1441px) {font-size: 1.9rem; padding: 0.9rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.9rem 0.9rem 0 0;}
-          @media screen and (min-width: 1681px) {font-size: 2rem; padding: 1rem; border: 2px solid rgba(var(--projects-color-5), 1); margin: 1rem 1rem 0 0;}
-          @media screen and (min-width: 1921px) {font-size: 2.3rem; padding: 1.1rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 1.1rem 1.1rem 0 0;}
-          @media screen and (min-width: 2161px) {font-size: 2.5rem; padding: 1.3rem; border: 3px solid rgba(var(--projects-color-2), 1); margin: 1.3rem 1.3rem 0 0;}
-          @media screen and (min-width: 2401px) {font-size: 2.8rem; padding: 1.4rem; border: 3px solid rgba(var(--projects-color-2), 1); margin: 1.4rem 1.4rem 0 0;}
-          @media screen and (min-width: 2641px) {font-size: 3rem; padding: 1.5rem; border: 3px solid rgba(var(--projects-color-2), 1); margin: 1.5rem 1.5rem 0 0;}
-          @media screen and (min-width: 2881px) {font-size: 3.3rem; padding: 1.6rem; border: 3px solid rgba(var(--projects-color-2), 1); margin: 1.6rem 1.6rem 0 0;}
-          @media screen and (min-width: 3121px) {font-size: 3.5rem; padding: 1.8rem; border: 4px solid rgba(var(--projects-color-2), 1); margin: 1.8rem 1.8rem 0 0;}
-          @media screen and (min-width: 3361px) {font-size: 3.8rem; padding: 1.9rem; border: 4px solid rgba(var(--projects-color-2), 1); margin: 1.9rem 1.9rem 0 0;}
-          @media screen and (min-width: 3601px) {font-size: 4rem; padding: 2rem; border: 4px solid rgba(var(--projects-color-2), 1); margin: 2rem 2rem 0 0;}
+          @media screen and (min-width: 481px) {font-size: 1.7rem; padding: 0.6rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.6rem 0.6rem 0 0;}
+          @media screen and (min-width: 721px) {font-size: 1.7rem; padding: 0.7rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.7rem 0.7rem 0 0;}
+          @media screen and (min-width: 961px) {font-size: 1.8rem; padding: 0.8rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.8rem 0.8rem 0 0;}
+          @media screen and (min-width: 1201px) {font-size: 1.9rem; padding: 0.9rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.9rem 0.9rem 0 0;}
+          @media screen and (min-width: 1441px) {font-size: 1.9rem; padding: 0.9rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.9rem 0.9rem 0 0;}
+          @media screen and (min-width: 1681px) {font-size: 2rem; padding: 1rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 1rem 1rem 0 0;}
+          @media screen and (min-width: 1921px) {font-size: 2.3rem; padding: 1.1rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 1.1rem 1.1rem 0 0;}
+          @media screen and (min-width: 2161px) {font-size: 2.5rem; padding: 1.3rem; border: 3px solid rgba(var(--projects-color-3), 1); margin: 1.3rem 1.3rem 0 0;}
+          @media screen and (min-width: 2401px) {font-size: 2.8rem; padding: 1.4rem; border: 3px solid rgba(var(--projects-color-3), 1); margin: 1.4rem 1.4rem 0 0;}
+          @media screen and (min-width: 2641px) {font-size: 3rem; padding: 1.5rem; border: 3px solid rgba(var(--projects-color-3), 1); margin: 1.5rem 1.5rem 0 0;}
+          @media screen and (min-width: 2881px) {font-size: 3.3rem; padding: 1.6rem; border: 3px solid rgba(var(--projects-color-3), 1); margin: 1.6rem 1.6rem 0 0;}
+          @media screen and (min-width: 3121px) {font-size: 3.5rem; padding: 1.8rem; border: 4px solid rgba(var(--projects-color-3), 1); margin: 1.8rem 1.8rem 0 0;}
+          @media screen and (min-width: 3361px) {font-size: 3.8rem; padding: 1.9rem; border: 4px solid rgba(var(--projects-color-3), 1); margin: 1.9rem 1.9rem 0 0;}
+          @media screen and (min-width: 3601px) {font-size: 4rem; padding: 2rem; border: 4px solid rgba(var(--projects-color-3), 1); margin: 2rem 2rem 0 0;}
 
           span {
             font-weight: 450;
@@ -149,7 +149,7 @@
             @media screen and (min-width: 3601px) {font-size: 4rem;}
 
             &::selection {
-              background-color: rgba(var(--projects-color-3), 1);
+              background-color: rgba(var(--projects-color-2), 1);
               color:  rgba(var(--projects-color-1), 1);
             }
   
@@ -163,7 +163,7 @@
         line-height: 1.7;
         font-weight: 450;
 
-        background: linear-gradient(to top right, rgba(var(--projects-color-2), 1), rgba(var(--projects-color-2b), 1));
+        background: linear-gradient(to top right, rgba(var(--projects-color-3), 1), rgba(var(--projects-color-3b), 1));
         color: transparent;
         background-clip: text;
 
@@ -186,6 +186,7 @@
 
         p {
           margin: 2.3rem 0 0 0;
+          text-shadow: 0px 0px #00000000; // safari gradient text bug fix
 
           @media screen and (min-width: 481px) {margin: 2.6rem 0 0 0;}
           @media screen and (min-width: 721px) {margin: 2.9rem 0 0 0;}
@@ -203,7 +204,7 @@
           @media screen and (min-width: 3601px) {margin: 8rem 0 0 0;}
 
           &::selection {
-            background-color: rgba(var(--projects-color-3), 1);
+            background-color: rgba(var(--projects-color-2), 1);
             color:  rgba(var(--projects-color-1), 1);
           }
           
@@ -235,18 +236,18 @@
           text-decoration: none;
           color: inherit;
           font-weight: 600;
-          background: linear-gradient(to top right, rgba(var(--projects-color-2), 1), rgba(var(--projects-color-2b), 1));
+          background: linear-gradient(to top right, rgba(var(--projects-color-3), 1), rgba(var(--projects-color-3b), 1));
           color: transparent;
           background-clip: text;
           filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .5));
 
           font-size: 1.8rem;
           padding: 1.7rem;
-          border: 2px solid rgba(var(--projects-color-2), 1);
+          border: 2px solid rgba(var(--projects-color-3), 1);
           margin: 1rem 1rem 0 0;
 
           &::selection {
-            background-color: rgba(var(--projects-color-3), 1);
+            background-color: rgba(var(--projects-color-2), 1);
             color:  rgba(var(--projects-color-1), 1);
           }
 
@@ -254,24 +255,24 @@
             margin-right: 0;
           }
 
-          @media screen and (min-width: 241px) {font-size: 1.6rem; padding: 1rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.6rem 0.6rem 0 0;}
-          @media screen and (min-width: 481px) {font-size: 1.6rem; padding: 1.1rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.6rem 0.6rem 0 0;}
-          @media screen and (min-width: 721px) {font-size: 1.7rem; padding: 1.2rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.7rem 0.7rem 0 0;}
-          @media screen and (min-width: 961px) {font-size: 1.7rem; padding: 1.3rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.8rem 0.8rem 0 0;}
-          @media screen and (min-width: 1201px) {font-size: 1.7rem; padding: 1.5rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.9rem 0.9rem 0 0;}
-          @media screen and (min-width: 1441px) {font-size: 1.8rem; padding: 1.6rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 0.9rem 0.9rem 0 0;}
-          @media screen and (min-width: 1681px) {font-size: 1.8rem; padding: 1.7rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 1rem 1rem 0 0;}
-          @media screen and (min-width: 1921px) {font-size: 2.0rem; padding: 1.9rem; border: 2px solid rgba(var(--projects-color-2), 1); margin: 1.1rem 1.1rem 0 0;}
-          @media screen and (min-width: 2161px) {font-size: 2.3rem; padding: 2.1rem; border: 3px solid rgba(var(--projects-color-2), 1); margin: 1.3rem 1.3rem 0 0;}
-          @media screen and (min-width: 2401px) {font-size: 2.5rem; padding: 2.3rem; border: 3px solid rgba(var(--projects-color-2), 1); margin: 1.4rem 1.4rem 0 0;}
-          @media screen and (min-width: 2641px) {font-size: 2.7rem; padding: 2.6rem; border: 3px solid rgba(var(--projects-color-2), 1); margin: 1.5rem 1.5rem 0 0;}
-          @media screen and (min-width: 2881px) {font-size: 2.9rem; padding: 2.8rem; border: 3px solid rgba(var(--projects-color-2), 1); margin: 1.6rem 1.6rem 0 0;}
-          @media screen and (min-width: 3121px) {font-size: 3.2rem; padding: 3.0rem; border: 4px solid rgba(var(--projects-color-2), 1); margin: 1.8rem 1.8rem 0 0;}
-          @media screen and (min-width: 3361px) {font-size: 3.4rem; padding: 3.2rem; border: 4px solid rgba(var(--projects-color-2), 1); margin: 1.9rem 1.9rem 0 0;}
-          @media screen and (min-width: 3601px) {font-size: 3.6rem; padding: 3.4rem; border: 4px solid rgba(var(--projects-color-2), 1); margin: 2rem 2rem 0 0;}
+          @media screen and (min-width: 241px) {font-size: 1.6rem; padding: 1rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.6rem 0.6rem 0 0;}
+          @media screen and (min-width: 481px) {font-size: 1.6rem; padding: 1.1rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.6rem 0.6rem 0 0;}
+          @media screen and (min-width: 721px) {font-size: 1.7rem; padding: 1.2rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.7rem 0.7rem 0 0;}
+          @media screen and (min-width: 961px) {font-size: 1.7rem; padding: 1.3rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.8rem 0.8rem 0 0;}
+          @media screen and (min-width: 1201px) {font-size: 1.7rem; padding: 1.5rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.9rem 0.9rem 0 0;}
+          @media screen and (min-width: 1441px) {font-size: 1.8rem; padding: 1.6rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 0.9rem 0.9rem 0 0;}
+          @media screen and (min-width: 1681px) {font-size: 1.8rem; padding: 1.7rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 1rem 1rem 0 0;}
+          @media screen and (min-width: 1921px) {font-size: 2.0rem; padding: 1.9rem; border: 2px solid rgba(var(--projects-color-3), 1); margin: 1.1rem 1.1rem 0 0;}
+          @media screen and (min-width: 2161px) {font-size: 2.3rem; padding: 2.1rem; border: 3px solid rgba(var(--projects-color-3), 1); margin: 1.3rem 1.3rem 0 0;}
+          @media screen and (min-width: 2401px) {font-size: 2.5rem; padding: 2.3rem; border: 3px solid rgba(var(--projects-color-3), 1); margin: 1.4rem 1.4rem 0 0;}
+          @media screen and (min-width: 2641px) {font-size: 2.7rem; padding: 2.6rem; border: 3px solid rgba(var(--projects-color-3), 1); margin: 1.5rem 1.5rem 0 0;}
+          @media screen and (min-width: 2881px) {font-size: 2.9rem; padding: 2.8rem; border: 3px solid rgba(var(--projects-color-3), 1); margin: 1.6rem 1.6rem 0 0;}
+          @media screen and (min-width: 3121px) {font-size: 3.2rem; padding: 3.0rem; border: 4px solid rgba(var(--projects-color-3), 1); margin: 1.8rem 1.8rem 0 0;}
+          @media screen and (min-width: 3361px) {font-size: 3.4rem; padding: 3.2rem; border: 4px solid rgba(var(--projects-color-3), 1); margin: 1.9rem 1.9rem 0 0;}
+          @media screen and (min-width: 3601px) {font-size: 3.6rem; padding: 3.4rem; border: 4px solid rgba(var(--projects-color-3), 1); margin: 2rem 2rem 0 0;}
 
           &:hover {
-            background: linear-gradient(to top right, rgba(var(--projects-color-2), 1), rgba(var(--projects-color-2b), 1));
+            background: linear-gradient(to top right, rgba(var(--projects-color-3), 1), rgba(var(--projects-color-3b), 1));
             color: rgba(var(--projects-color-1), 1);
             cursor: pointer;
           }
@@ -288,28 +289,77 @@
 
   /*Blue scheme*/
 
-  /*.project:nth-child(2) {
-    color: rgba(var(--blue-project-color-3), 1);
-  }
+  .project.blue {
 
-  .project:nth-child(2) .project-info {
-    background-color: rgba(var(--blue-project-color-1), 1);
+    .project-info {
+      background: linear-gradient(to top right, rgba(var(--blue-project-color-1), 1), rgba(var(--blue-project-color-1b), 1));
+      @media screen and (min-width: 961px) {background: linear-gradient(to top right, rgba(var(--blue-project-color-1), .95), rgba(var(--blue-project-color-1b), .95));}
 
-    @media screen and (min-width: 961px) {background-color: rgba(var(--blue-project-color-1), 0.95);}
-  }
+      .title {
+        background: linear-gradient(to top right, rgba(var(--blue-project-color-2), 1), rgba(var(--blue-project-color-2b), 1));
+        color: transparent;
+        background-clip: text;
 
-  .project:nth-child(2) .technologies .box {
-    background-color: rgba(var(--blue-project-color-4), 0.9);
-  }
-  .project:nth-child(2) .description {
-    color: rgba(var(--blue-project-color-2), 0.9);
-  }
-  .project:nth-child(2) .demo-code .box {
-    border: 2px solid rgba(var(--blue-project-color-2), 1);
+        &::selection {
+          background-color: rgba(var(--blue-project-color-2), 1);
+          color:  rgba(var(--blue-project-color-1), 1);
+        }
+      }
 
-    &:hover {
-      background-color: rgba(var(--blue-project-color-2), 1);
-      color: rgba(var(--blue-project-color-1), 1);
+      .technologies {
+
+        .box {
+        border: 2px solid rgba(var(--projects-color-5), 1);
+        background: linear-gradient(to top right, rgba(var(--blue-project-color-4), 1), rgba(var(--blue-project-color-4b), 1));
+
+        span {
+          background: linear-gradient(to top right, rgba(var(--blue-project-color-5), 1), rgba(var(--blue-project-color-5b), 1));
+          color: transparent;
+          background-clip: text;
+
+          &::selection {
+            background-color: rgba(var(--blue-project-color-2), 1);
+            color:  rgba(var(--blue-project-color-1), 1);
+          }
+        }
+      }
+      
+      
+      }
+
+      .description {
+        background: linear-gradient(to top right, rgba(var(--blue-project-color-3), 1), rgba(var(--blue-project-color-3b), 1));
+        color: transparent;
+        background-clip: text;
+
+        p {
+
+          &::selection {
+            background-color: rgba(var(--blue-project-color-2), 1);
+            color:  rgba(var(--blue-project-color-1), 1);
+          }
+        }
+      }
+
+      .demo-code {
+
+        .box {
+          background: linear-gradient(to top right, rgba(var(--blue-project-color-3), 1), rgba(var(--blue-project-color-3b), 1));
+          color: transparent;
+          background-clip: text;
+          border: 2px solid rgba(var(--blue-project-color-3), 1);
+
+          &::selection {
+            background-color: rgba(var(--blue-project-color-2), 1);
+            color:  rgba(var(--blue-project-color-1), 1);
+          }
+
+          &:hover {
+            background: linear-gradient(to top right, rgba(var(--blue-project-color-3), 1), rgba(var(--blue-project-color-3b), 1));
+            color: rgba(var(--blue-project-color-1), 1);
+          }
+        }
+      }
     }
-  }*/
+  }
 }

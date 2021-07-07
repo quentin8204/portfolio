@@ -34,6 +34,22 @@
   }
 }
 
+.runBannerAnimation {
+  .name {
+    animation: flyFromLeft .5s ease 2s backwards;
+  }
+
+  .description {
+    animation: flyFromRight .5s ease 2.5s backwards;
+  }
+
+  .projects-button {
+    animation: flyFromBottom .5s ease 3s backwards;
+  }
+
+
+}
+
 .banner {
   //background-color: rgba(var(--home-color-1), 1);
   background: linear-gradient(to top right, rgba(var(--home-color-1), 1), rgba(var(--home-color-1b), 1));
@@ -69,13 +85,13 @@
       align-items: center;
 
       .name {
-        background: linear-gradient(to top right, rgba(var(--home-color-3), 1), rgba(var(--home-color-3b), 1));
+        background: linear-gradient(to top right, rgba(var(--home-color-2), 1), rgba(var(--home-color-2b), 1));
         color: transparent;
         background-clip: text;
         filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .5));
 
         font-weight: 600;
-        animation: flyFromLeft .5s ease 2s backwards;
+        
 
         font-size: 4.5rem;
 
@@ -95,19 +111,19 @@
         @media screen and (min-width: 3601px) {font-size: 18rem;}
 
         &::selection {
-          background-color: rgba(var(--home-color-3), 1);
+          background-color: rgba(var(--home-color-2), 1);
           color:  rgba(var(--home-color-1), 1);
         }
       }
 
       .description {
-        background: linear-gradient(to top right, rgba(var(--home-color-3), 1), rgba(var(--home-color-3b), 1));
+        background: linear-gradient(to top right, rgba(var(--home-color-2), 1), rgba(var(--home-color-2b), 1));
         color: transparent;
         background-clip: text;
         filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .4));
 
         font-weight: 350;
-        animation: flyFromRight .5s ease 2.5s backwards;
+        
 
         font-size: 2.3rem;
         letter-spacing: 0.5rem; 
@@ -129,7 +145,7 @@
         @media screen and (min-width: 3601px) {font-size: 9rem; letter-spacing: 2rem; margin-left: 3.4rem}
 
         &::selection {
-          background-color: rgba(var(--home-color-3), 1);
+          background-color: rgba(var(--home-color-2), 1);
           color: rgba(var(--home-color-1), 1);
         }
       }
@@ -147,37 +163,37 @@
         overflow: hidden;
         display: none;
         filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .4));
-        animation: flyFromBottom .5s ease 3s backwards;
+        
 
         padding: 1.3rem;
         margin-top: 2.3rem;
-        border: 3px solid rgba(var(--home-color-3), 1);
+        border: 3px solid rgba(var(--home-color-2), 1);
         font-size: 1.3rem;
 
         @media screen and (min-height: 481px) {display: initial;}
 
-        @media screen and (min-width: 481px) {padding: 1.5rem; margin-top: 2.6rem; border: 3px solid rgba(var(--home-color-3), 1); font-size: 1.5rem;}
-        @media screen and (min-width: 721px) {padding: 1.6rem; margin-top: 2.9rem; border: 4px solid rgba(var(--home-color-3), 1); font-size: 1.6rem;}
-        @media screen and (min-width: 961px) {padding: 1.6rem; margin-top: 3.1rem; border: 4px solid rgba(var(--home-color-3), 1); font-size: 1.6rem;}
-        @media screen and (min-width: 1201px) {padding: 1.7rem; margin-top: 3.4rem; border: 4px solid rgba(var(--home-color-3), 1); font-size: 1.7rem;}
-        @media screen and (min-width: 1441px) {padding: 1.7rem; margin-top: 3.7rem; border: 5px solid rgba(var(--home-color-3), 1); font-size: 1.7rem;}
-        @media screen and (min-width: 1681px) {padding: 1.8rem; margin-top: 4rem; border: 5px solid rgba(var(--home-color-3), 1); font-size: 1.8rem;}
-        @media screen and (min-width: 1921px) {padding: 2.0rem; margin-top: 4.5rem; border: 6px solid rgba(var(--home-color-3), 1); font-size: 2.0rem;}
-        @media screen and (min-width: 2161px) {padding: 2.3rem; margin-top: 5rem; border: 6px solid rgba(var(--home-color-3), 1); font-size: 2.3rem;}
-        @media screen and (min-width: 2401px) {padding: 2.5rem; margin-top: 5.5rem; border: 7px solid rgba(var(--home-color-3), 1); font-size: 2.5rem;}
-        @media screen and (min-width: 2641px) {padding: 2.7rem; margin-top: 6rem; border: 8px solid rgba(var(--home-color-3), 1); font-size: 2.7rem;}
-        @media screen and (min-width: 2881px) {padding: 2.9rem; margin-top: 6.5rem; border: 8px solid rgba(var(--home-color-3), 1); font-size: 2.9rem;}
-        @media screen and (min-width: 3121px) {padding: 3.2rem; margin-top: 7rem; border: 9px solid rgba(var(--home-color-3), 1); font-size: 3.2rem;}
-        @media screen and (min-width: 3361px) {padding: 3.4rem; margin-top: 7.5rem; border: 9px solid rgba(var(--home-color-3), 1); font-size: 3.4rem;}
-        @media screen and (min-width: 3601px) {padding: 3.6rem; margin-top: 8rem; border: 10px solid rgba(var(--home-color-3), 1); font-size: 3.6rem;}
+        @media screen and (min-width: 481px) {padding: 1.5rem; margin-top: 2.6rem; border: 3px solid rgba(var(--home-color-2), 1); font-size: 1.5rem;}
+        @media screen and (min-width: 721px) {padding: 1.6rem; margin-top: 2.9rem; border: 4px solid rgba(var(--home-color-2), 1); font-size: 1.6rem;}
+        @media screen and (min-width: 961px) {padding: 1.6rem; margin-top: 3.1rem; border: 4px solid rgba(var(--home-color-2), 1); font-size: 1.6rem;}
+        @media screen and (min-width: 1201px) {padding: 1.7rem; margin-top: 3.4rem; border: 4px solid rgba(var(--home-color-2), 1); font-size: 1.7rem;}
+        @media screen and (min-width: 1441px) {padding: 1.7rem; margin-top: 3.7rem; border: 5px solid rgba(var(--home-color-2), 1); font-size: 1.7rem;}
+        @media screen and (min-width: 1681px) {padding: 1.8rem; margin-top: 4rem; border: 5px solid rgba(var(--home-color-2), 1); font-size: 1.8rem;}
+        @media screen and (min-width: 1921px) {padding: 2.0rem; margin-top: 4.5rem; border: 6px solid rgba(var(--home-color-2), 1); font-size: 2.0rem;}
+        @media screen and (min-width: 2161px) {padding: 2.3rem; margin-top: 5rem; border: 6px solid rgba(var(--home-color-2), 1); font-size: 2.3rem;}
+        @media screen and (min-width: 2401px) {padding: 2.5rem; margin-top: 5.5rem; border: 7px solid rgba(var(--home-color-2), 1); font-size: 2.5rem;}
+        @media screen and (min-width: 2641px) {padding: 2.7rem; margin-top: 6rem; border: 8px solid rgba(var(--home-color-2), 1); font-size: 2.7rem;}
+        @media screen and (min-width: 2881px) {padding: 2.9rem; margin-top: 6.5rem; border: 8px solid rgba(var(--home-color-2), 1); font-size: 2.9rem;}
+        @media screen and (min-width: 3121px) {padding: 3.2rem; margin-top: 7rem; border: 9px solid rgba(var(--home-color-2), 1); font-size: 3.2rem;}
+        @media screen and (min-width: 3361px) {padding: 3.4rem; margin-top: 7.5rem; border: 9px solid rgba(var(--home-color-2), 1); font-size: 3.4rem;}
+        @media screen and (min-width: 3601px) {padding: 3.6rem; margin-top: 8rem; border: 10px solid rgba(var(--home-color-2), 1); font-size: 3.6rem;}
 
         span {
-          background: linear-gradient(to top right, rgba(var(--home-color-3), 1), rgba(var(--home-color-3b), 1));
+          background: linear-gradient(to top right, rgba(var(--home-color-2), 1), rgba(var(--home-color-2b), 1));
           color: transparent;
           background-clip: text;
 
           &::selection {
-            background-color: rgba(var(--home-color-3), 1);
+            background-color: rgba(var(--home-color-2), 1);
             color:  rgba(var(--home-color-1), 1);
           }
         }

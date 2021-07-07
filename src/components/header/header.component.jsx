@@ -4,14 +4,17 @@ import React from 'react';
 // Styles
 import './header.styles.scss';
 
+// Images
+import photo560square from '../../assets/photo560square.jpg';
+
 // Fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faAddressCard, faCode, faEnvelope, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
-const Header = ({ changeColorScheme, colorScheme, homeScroll, aboutScroll, projectsScroll, contactScroll }) => (
-  <header className='header'>
-    <a className="logo-link" href="https://www.linkedin.com/in/quentin-neal-6b257218a/">
-      <img className="logo" alt=""/>{/* redesign to add alt text */}
+const Header = ({ changeColorScheme, colorScheme, homeScroll, aboutScroll, projectsScroll, contactScroll, animation }) => (
+  <header className={`header ${animation ? 'runHeaderAnimation' : null}`}>
+    <a className="logo" href="https://www.linkedin.com/in/quentin-neal-6b257218a/">
+      <img className="logo-image" alt="logo" src={photo560square} />
     </a>
     <div className="menu">
       <nav className="navigation">
@@ -26,8 +29,8 @@ const Header = ({ changeColorScheme, colorScheme, homeScroll, aboutScroll, proje
       : <button className="dark-toggle" onClick={changeColorScheme}><FontAwesomeIcon icon={faMoon}/><span>Dark Mode</span></button>}
       </div>
     </div>
-    <a className="logo-link hide" href="https://www.linkedin.com/in/quentin-neal-6b257218a/">
-      <img className="logo" alt=""/>
+    <a className="logo hide" href="https://www.linkedin.com/in/quentin-neal-6b257218a/">
+      <img className="logo-image" alt="logo"  src={photo560square} />
     </a>
   </header>
 );

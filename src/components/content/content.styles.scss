@@ -7,8 +7,15 @@
     }
   }
 
+.runContentAnimation {
+    animation: fadeInContent 1s ease 1.5s both;
+
+}
+
+
 .content {
-    animation: fadeInContent 1s ease 1.5s backwards;
+    opacity: 0;
+    
     order: -1;
 
     @media screen and (min-width: 961px) and (min-height: 721px)  {

@@ -1,3 +1,53 @@
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);}
+  }
+
+.spinner.spinner-light {
+   background-color: rgba(var(--menu-color), 1);
+
+   .spinner-object {
+       border-color: rgba(var(--outline-color), .1);
+       border-top-color: rgba(var(--home-color-1), 1);
+       border-bottom-color: rgba(var(--home-color-1), 1);
+   }
+}
+
+.spinner.spinner-dark {
+    background-color: rgba(var(--menu-color), 1);
+
+    .spinner-object {
+        border-color: rgba(var(--outline-color), .1);
+        border-top-color: rgba(var(--home-color-2b), 1);
+        border-bottom-color: rgba(var(--home-color-2b), 1);
+    }
+}
+
+.spinner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    .spinner-object {
+        animation: spin 1s linear infinite both;
+        border: .4rem solid;
+        border-radius: 50%;
+
+        width: 12rem;
+        height: 12rem;
+
+        @media screen and (min-width: 961px) {border: .6rem solid; width: 14rem; height: 14rem;}
+        @media screen and (min-width: 1921px) {border: .4vw solid; width: 8vw; height: 8vw;}
+        
+    }
+}
+
 *,
 *::after,
 *::before {
@@ -16,33 +66,19 @@ body {
     font-weight: 300;
 }
 
-#root {
-
-}
-
 .App {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
     background-color: rgba(var(--menu-color), 1);
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
   
     @media screen and (min-width: 961px) and (min-height: 721px)  {
-        grid-template-rows: 1fr;
-
-        grid-template-columns: 12rem 1fr;
 
         @media screen and (min-width: 961px) {grid-template-columns: 10.5rem 1fr;}
         @media screen and (min-width: 1201px) {grid-template-columns: 11rem 1fr;}
         @media screen and (min-width: 1441px) {grid-template-columns: 11.5rem 1fr;}
         @media screen and (min-width: 1681px) {grid-template-columns: 12rem 1fr;}
-        @media screen and (min-width: 1921px) {grid-template-columns: 13.5rem 1fr;}
-        @media screen and (min-width: 2161px) {grid-template-columns: 15rem 1fr;}
-        @media screen and (min-width: 2401px) {grid-template-columns: 16.5rem 1fr;}
-        @media screen and (min-width: 2641px) {grid-template-columns: 18rem 1fr;}
-        @media screen and (min-width: 2881px) {grid-template-columns: 19.5rem 1fr;}
-        @media screen and (min-width: 3121px) {grid-template-columns: 21rem 1fr;}
-        @media screen and (min-width: 3361px) {grid-template-columns: 22.5rem 1fr;}
-        @media screen and (min-width: 3601px) {grid-template-columns: 24rem 1fr;}
+        @media screen and (min-width: 1921px) {grid-template-columns: 6.3% 1fr;}
     }
 }
 
@@ -75,7 +111,6 @@ a {
 .keydown *:focus {
     outline-color: rgba(var(--outline-color), 1);
     outline-style: solid;
-    
     outline-width: 4px;
     outline-offset: -4px;
 
@@ -93,118 +128,122 @@ a {
     @media screen and (min-width: 3121px) {outline-width: 14px; outline-offset: -14px;}
     @media screen and (min-width: 3361px) {outline-width: 15px; outline-offset: -15px;}
     @media screen and (min-width: 3601px) {outline-width: 16px; outline-offset: -16px;}
-
-
 }
   
 .light {
---menu-color: 255,255,255;
---outline-color: 13, 13, 13;
+    --menu-color: 255,255,255;
+    --outline-color: 13, 13, 13;
 
---home-menu-color: 0, 111, 223;
---home-color-1: 0, 0, 232;
---home-color-2: 255, 255, 255;
---home-color-3: 255, 255, 255;
---home-color-1b: 0, 89, 178;
---home-color-2b: 255, 255, 255;
---home-color-3b: 255, 255, 255;
---home-transparency: 0.7;
+    --home-menu-color: 0, 111, 223;
+    --home-color-1: 0, 0, 232;
+    --home-color-3: 255, 255, 255;
+    --home-color-2: 255, 255, 255;
+    --home-color-1b: 0, 89, 178;
+    --home-color-3b: 255, 255, 255;
+    --home-color-2b: 255, 255, 255;
+    --home-transparency: 0.7;
 
---about-menu-color: 227, 57, 0;
---about-color-1:182, 46, 0;
---about-color-2: 255, 222, 210;
---about-color-3: 255, 255, 255;
---about-color-1b: 158, 79, 0;
---about-color-2b: 255, 225, 194;
---about-color-3b: 255, 255, 255;
+    --about-menu-color: 227, 57, 0;
+    --about-color-1:182, 46, 0;
+    --about-color-3: 255, 222, 210;
+    --about-color-2: 255, 255, 255;
+    --about-color-1b: 158, 79, 0; // 132, 99, 0;
+    --about-color-3b: 255, 225, 194;
+    --about-color-2b: 255, 255, 255;
 
---projects-menu-color: 124, 0, 248;
---projects-color-1:99, 0, 198;
---projects-color-2: 236, 216, 255;
---projects-color-3: 255, 255, 255;
---projects-color-4: 181, 0, 181;
---projects-color-5: 255, 255, 255;
---projects-color-1b: 144, 0, 144;
---projects-color-2b: 255, 204, 255;
---projects-color-3b: 255, 255, 255;
---projects-color-4b: 181, 0, 181;
---projects-color-5b: 255, 255, 255;
+    --projects-menu-color: 124, 0, 248;
+    --projects-color-1:99, 0, 198;
+    --projects-color-3: 236, 216, 255;
+    --projects-color-2: 255, 255, 255;
+    --projects-color-4: 181, 0, 181;
+    --projects-color-5: 255, 255, 255;
+    --projects-color-1b: 144, 0, 144;
+    --projects-color-3b: 255, 204, 255;
+    --projects-color-2b: 255, 255, 255;
+    --projects-color-4b: 181, 0, 181;
+    --projects-color-5b: 255, 255, 255;
 
-    --blue-project-color-1: 0, 89, 178;
-    --blue-project-color-2: 207, 231, 255;
-    --blue-project-color-3: 255, 255, 255;
-    --blue-project-color-4: 0, 111, 223;
+        --blue-project-color-1: 0, 0, 232;
+        --blue-project-color-3: 223, 223, 255;
+        --blue-project-color-2: 255, 255, 255;
+        --blue-project-color-4: 0, 111, 223;
+        --blue-project-color-5: 255, 255, 255;
+        --blue-project-color-1b: 0, 89, 178;
+        --blue-project-color-3b: 207, 231, 255;
+        --blue-project-color-2b: 255, 255, 255;
+        --blue-project-color-4b: 0, 111, 223;
+        --blue-project-color-5b: 255, 255, 255;
 
+    --contact-menu-color: 214, 0, 107;
+    --contact-color-1: 184, 0, 46;
+    --contact-color-3: 255, 216, 226;
+    --contact-color-2: 255, 255, 255;
+    --contact-color-1b: 158, 0, 119;
+    --contact-color-3b: 255, 209, 243;
+    --contact-color-2b: 255, 255, 255;
 
---contact-menu-color: 214, 0, 107;
---contact-color-1: 184, 0, 46;
---contact-color-2: 255, 216, 226;
---contact-color-3: 255, 255, 255;
---contact-color-4: 124, 0, 248;
---contact-color-1b: 158, 0, 119;
---contact-color-2b: 255, 209, 243;
---contact-color-3b: 255, 255, 255;
+    --dark-mode-menu-color: 128, 128, 128;
+    --light-mode-menu-color: 218, 218, 0;
 
---dark-mode-menu-color: 128, 128, 128;
---light-mode-menu-color: 218, 218, 0;
-
---menu-shadow-home: -2px 2px 1px rgba(0, 0, 0, .5);
---menu-shadow-about: -2px 2px 1px rgba(0, 0, 0, .5);
---menu-shadow-projects: -2px 2px 1px rgba(0, 0, 0, .5);
---menu-shadow-contact: -2px 2px 1px rgba(0, 0, 0, .5);
---menu-shadow-light: -2px 2px 1px rgba(0, 0, 0, .5);
-
+    --menu-shadow-home: -2px 2px 1px rgba(0, 0, 0, .5);
+    --menu-shadow-about: -2px 2px 1px rgba(0, 0, 0, .5);
+    --menu-shadow-projects: -2px 2px 1px rgba(0, 0, 0, .5);
+    --menu-shadow-contact: -2px 2px 1px rgba(0, 0, 0, .5);
+    --menu-shadow-light: -2px 2px 1px rgba(0, 0, 0, .5);
+    --menu-shadow-dark: -2px 2px 1px rgba(0, 0, 0, .5);
 }
 
 .dark {
     --menu-color: 7, 7, 7;
     --outline-color: 255, 255, 255;
     
-    --home-menu-color: 0, 192, 255;//0, 192, 255
-    --home-color-1: 13, 13, 13;
-    --home-color-2: 217, 217, 217;
-    --home-color-3: 0, 128, 255;
-    --home-color-1b: 13, 13, 13;
-    --home-color-2b: 217, 217, 217;
-    --home-color-3b: 0, 255, 255;
+    --home-menu-color: 0, 192, 255;
+    --home-color-1: 0, 0, 0;
+    --home-color-3: 217, 217, 217;
+    --home-color-2: 0, 128, 255;
+    --home-color-1b: 18, 18, 18;
+    --home-color-3b: 217, 217, 217;
+    --home-color-2b: 0, 255, 255;
     --home-transparency: 0.9;
     
-    --about-menu-color: 255, 136, 0;//255, 136, 0
-    --about-color-1: 13, 13, 13;
-    --about-color-2: 217, 217, 217;
-    --about-color-3: 255, 64, 0;
-    --about-color-1b: 13, 13, 13;
-    --about-color-2b: 217, 217, 217;
-    --about-color-3b: 255, 192, 0;
+    --about-menu-color: 255, 136, 0;
+    --about-color-1: 18, 18, 18;
+    --about-color-3: 217, 217, 217;
+    --about-color-2: 255, 64, 0;
+    --about-color-1b: 18, 18, 18;
+    --about-color-3b: 217, 217, 217;
+    --about-color-2b: 255, 192, 0;
     
-    --projects-menu-color: 255, 36, 255;//255, 36, 255
-    --projects-color-1: 13, 13, 13;
-    --projects-color-2: 217, 217, 217;
-    --projects-color-3: 192, 0, 255;
-    --projects-color-4: 13, 13, 13;
+    --projects-menu-color: 255, 36, 255;
+    --projects-color-1: 18, 18, 18;
+    --projects-color-3: 217, 217, 217;
+    --projects-color-2: 192, 0, 255;
+    --projects-color-4: 18, 18, 18;
     --projects-color-5: 217, 217, 217;
-    --projects-color-1b: 13, 13, 13;
-    --projects-color-2b: 217, 217, 217;
-    --projects-color-3b: 255, 0, 192;
-    --projects-color-4b: 13, 13, 13;
+    --projects-color-1b: 18, 18, 18;
+    --projects-color-3b: 217, 217, 217;
+    --projects-color-2b: 255, 0, 192;
+    --projects-color-4b: 18, 18, 18;
     --projects-color-5b: 217, 217, 217;
     
-        --blue-project-color-1: 13, 13, 13;
-        --blue-project-color-2: 217, 217, 217;
-        --blue-project-color-3: 207, 231, 255;
-        --blue-project-color-4: 0, 67, 134;
-        --blue-project-color-1b: 13, 13, 13;
-        --blue-project-color-2b: 217, 217, 217;
-        --blue-project-color-3b: 207, 231, 255;
-        --blue-project-color-4b: 0, 67, 134;
+        --blue-project-color-1: 18, 18, 18;
+        --blue-project-color-3: 217, 217, 217;
+        --blue-project-color-2: 0, 128, 255;
+        --blue-project-color-4: 18, 18, 18;
+        --blue-project-color-5: 217, 217, 217;
+        --blue-project-color-1b: 18, 18, 18;
+        --blue-project-color-3b: 217, 217, 217;
+        --blue-project-color-2b: 0, 255, 255;
+        --blue-project-color-4b: 18, 18, 18;
+        --blue-project-color-5b: 217, 217, 217;
     
-    --contact-menu-color: 255, 0, 98;//255, 0, 98
-    --contact-color-1: 13, 13, 13;
-    --contact-color-2: 217, 217, 217;
-    --contact-color-3: 255, 0, 64;
-    --contact-color-1b: 13, 13, 13;
-    --contact-color-2b: 217, 217, 217;
-    --contact-color-3b: 255, 0, 192;
+    --contact-menu-color: 255, 21, 80;
+    --contact-color-1: 18, 18, 18;
+    --contact-color-3: 217, 217, 217;
+    --contact-color-2: 255, 0, 64;
+    --contact-color-1b: 18, 18, 18;
+    --contact-color-3b: 217, 217, 217;
+    --contact-color-2b: 255, 0, 192;
     
     --dark-mode-menu-color: 128, 128, 128;
     --light-mode-menu-color: 194, 194, 0;
@@ -212,16 +251,18 @@ a {
     --menu-shadow-home-color: 0, 192, 255, 1;
     --menu-shadow-about-color: 255, 136, 0, 1;
     --menu-shadow-projects-color: 255, 36, 255, 1;
-    --menu-shadow-contact-color: 255, 0, 98, 1;
+    --menu-shadow-contact-color: 255, 21, 80, 1;
     --menu-shadow-light-color: 194, 194, 0;
+    --menu-shadow-dark-color: 128, 128, 128, 1;
+
     --menu-shadow-home: 0px 0px 10px rgba(var(--menu-shadow-home-color));
     --menu-shadow-about: 0px 0px 10px rgba(var(--menu-shadow-about-color));
     --menu-shadow-projects: 0px 0px 10px rgba(var(--menu-shadow-projects-color));
     --menu-shadow-contact: 0px 0px 10px rgba(var(--menu-shadow-contact-color));
     --menu-shadow-light: 0px 0px 10px rgba(var(--menu-shadow-light-color));
+    --menu-shadow-dark: 0px 0px 10px rgba(var(--menu-shadow-dark-color));
     }
 /*
-/*filter: drop-shadow(0px 0px 10px rgba(0, 192, 255, 1));*/
 /*
 Color list (luminance)
 

@@ -11,12 +11,26 @@ import Content from './components/content/content.component';
 // Formspree
 import { FormspreeProvider } from "@formspree/react";
 
-
 const App = () => {
 
+  const [animation, setAnimation] = useState(false);
   const [darkMode, setDarkMode] = useState(localStorage.getItem('dark-mode') === 'true');
   const [mouseUser, setMouseUser] = useState(false);
 
+  // Intro animations
+  useEffect(() => {
+    window.addEventListener("load", startAnimation);
+
+    return () => {
+      window.removeEventListener("load", startAnimation);
+    };
+  }, []);
+
+  const startAnimation = () => {
+       setAnimation(true);
+  }
+
+  // Dark mode
   useEffect(() => {
     localStorage.setItem('dark-mode', darkMode);
   }, [darkMode]);
@@ -25,6 +39,7 @@ const App = () => {
     setDarkMode(prevMode => !prevMode);
   }
 
+  // Keyboard accessability
   useEffect(() => {
 
     const mouseDownFunc = () => {
@@ -39,6 +54,7 @@ const App = () => {
 
   }, []);
 
+  // Smooth scrolling
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -49,11 +65,17 @@ const App = () => {
   const projectsScroll = () => {projectsRef.current.scrollIntoView({ behavior: 'smooth' })}
   const contactScroll = () => {contactRef.current.scrollIntoView({ behavior: 'smooth' })}
 
+
+
   return (
     <FormspreeProvider project="1628451151437364529">
+      {animation
+        ? null
+        : <div className={`spinner ${darkMode ? 'dark' : 'light'} ${darkMode ? 'spinner-dark' : 'spinner-light'}`}><div className='spinner-object'></div></div>
+      }
       <div className={`App ${darkMode ? 'dark' : 'light'} ${mouseUser ? 'mousedown' : 'keydown'}`}>
-        <Header homeScroll={homeScroll} aboutScroll={aboutScroll} projectsScroll={projectsScroll} contactScroll={contactScroll} changeColorScheme={changeColorScheme} colorScheme={`${darkMode ? 'dark' : 'light'}`}/>
-        <Content homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} projectsScroll={projectsScroll}/>
+        <Header animation={animation} homeScroll={homeScroll} aboutScroll={aboutScroll} projectsScroll={projectsScroll} contactScroll={contactScroll} changeColorScheme={changeColorScheme} colorScheme={`${darkMode ? 'dark' : 'light'}`}/>
+        <Content animation={animation} homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} projectsScroll={projectsScroll}/>
       </div>
     </FormspreeProvider>
   );

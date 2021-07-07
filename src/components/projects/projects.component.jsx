@@ -53,7 +53,9 @@ const Projects = ({projectsRef}) => {
         demo: 'https://crwn-live-quentin.herokuapp.com/',
         github: 'https://github.com/quentin8204/crwn-clothing',
         original: 'https://crwnshop.herokuapp.com/'
-      }
+      },
+      color: 'default',
+      alt: 'Crown Clothing'
     },
     {
       id: 'project2',
@@ -79,15 +81,16 @@ const Projects = ({projectsRef}) => {
       sources: {
         demo: 'https://portfolio-live-quentin.herokuapp.com/',
         github: 'https://github.com/quentin8204/portfolio'
-      }
+      },
+      color: 'blue',
+      alt: 'Portfolio'
     }]
   });
 
   return (
-
     <section ref={projectsRef} className="projects">
-    {projects.sections.map(({id, images, title, technologies, description, sources}) => (
-      <div key={id} className='project'>
+    {projects.sections.map(({id, images, title, technologies, description, sources, color, alt}) => (
+      <div key={id} className={`project ${color}`}>
         <img
           className="background"
           sizes="(max-width: 3840px) 100vw, 3840px"
@@ -103,7 +106,7 @@ const Projects = ({projectsRef}) => {
           ${images.image9} 2880w,
           ${images.image10} 3200w`}
           src={images.image10}
-          alt="Crown Clothing"
+          alt={alt}
         />
         <div className="project-info">
           <div className='title'>{title}</div>
