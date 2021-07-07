@@ -20,12 +20,11 @@ const App = () => {
   // Intro animations
 
   useEffect(() => {
-    if (typeof window !== `undefined`) { window.addEventListener("load", startAnimation) }
+    if (typeof window !== 'undefined') {setAnimation(true);}
+    
  }, []);
 
-  const startAnimation = () => {
-       setAnimation(true);
-  }
+
 
   // Dark mode
   useEffect(() => {
