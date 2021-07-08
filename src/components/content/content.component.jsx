@@ -10,9 +10,9 @@ import About from '../about/about.component';
 import Projects from '../projects/projects.component';
 import Contact from '../contact/contact.component';
 
-const Content = ({homeRef, aboutRef, projectsRef, contactRef, projectsScroll, animation}) => (
-  <div className={`content ${animation ? 'runContentAnimation' : null}`} tabIndex='-1'>
-    <Banner animation={animation} homeRef={homeRef} projectsScroll={projectsScroll}/>
+const Content = ({homeRef, aboutRef, projectsRef, contactRef, projectsScroll}) => (
+  <div className={`content runContentAnimation`} tabIndex='-1'>
+    <Banner homeRef={homeRef} projectsScroll={projectsScroll}/>
     <About aboutRef={aboutRef}/>
     <Projects projectsRef={projectsRef}/>
     <Contact contactRef={contactRef}/>

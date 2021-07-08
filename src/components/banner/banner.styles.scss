@@ -34,22 +34,6 @@
   }
 }
 
-.runBannerAnimation {
-  .name {
-    animation: flyFromLeft .5s ease 2s backwards;
-  }
-
-  .description {
-    animation: flyFromRight .5s ease 2.5s backwards;
-  }
-
-  .projects-button {
-    animation: flyFromBottom .5s ease 3s backwards;
-  }
-
-
-}
-
 .banner {
   //background-color: rgba(var(--home-color-1), 1);
   background: linear-gradient(to top right, rgba(var(--home-color-1), 1), rgba(var(--home-color-1b), 1));
@@ -62,7 +46,6 @@
     object-position: center center;
     width: 100%;
     height: 100%;
-    animation: zoomIn 20s linear 1.5s forwards;
   }
 
   .color-overlay {

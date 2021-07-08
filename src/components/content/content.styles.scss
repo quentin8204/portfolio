@@ -5,21 +5,14 @@
     100% {
         opacity: 1;
     }
-  }
-
-.runContentAnimation {
-    animation: fadeInContent 1s ease 1.5s both;
-
 }
-
 
 .content {
     opacity: 0;
-    
     order: -1;
 
     @media screen and (min-width: 961px) and (min-height: 721px)  {
-        grid-column: 2 / 3;
         order: 0;
+        grid-column: 2 / 3;
     }
 }

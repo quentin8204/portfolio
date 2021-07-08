@@ -20,7 +20,7 @@ import puntaSir3520 from '../../assets/puntaSir3520.jpg';
 import puntaSir3840 from '../../assets/puntaSir3840.jpg';
 
 const Banner = ({homeRef, projectsScroll, animation}) => (
-  <section ref={homeRef} className={`banner ${animation ? 'runBannerAnimation' : null}`}>
+  <section ref={homeRef} className={`banner runBannerAnimation`}>
     <img
       className="background"
       sizes="(max-width: 3840px) 100vw, 3840px"

@@ -1,3 +1,84 @@
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);}
+}
+
+.spinner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: rgba(255,255,255, 1);
+
+  .spinner-object {
+    animation: spin 1s linear infinite both;
+    border: .4rem solid;
+    border-color: rgba(13, 13, 13, .1);
+    border-top-color: rgba(0, 0, 232, 1);
+    border-bottom-color: rgba(0, 0, 232, 1);
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+
+    @media screen and (min-width: 961px) {border: .6rem solid; border-color: rgba(13, 13, 13, .1); border-top-color: rgba(0, 0, 232, 1); border-bottom-color: rgba(0, 0, 232, 1); width: 14rem; height: 14rem;}
+    @media screen and (min-width: 1921px) {border: .4vw solid; border-color: rgba(13, 13, 13, .1); border-top-color: rgba(0, 0, 232, 1); border-bottom-color: rgba(0, 0, 232, 1); width: 8vw; height: 8vw;}
+  }
+}
+
+.hide-spinner {
+  display: none;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.showScrollbar {
+  overflow-y: visible;
+}
+
+.introAnimation + #root {
+
+  .runHeaderAnimation {
+    animation: navSlideUp 1s ease both;
+  }
+  
+  @media screen and (min-width: 961px) and (min-height: 721px)  {
+
+    .runHeaderAnimation {
+      animation: navSlideRight 1s ease both;
+    }
+  }
+  
+  .runContentAnimation {
+    animation: fadeInContent 1s ease 1.5s both;
+  }
+
+  .runBannerAnimation {
+
+    .background {
+      animation: zoomIn 20s linear 1.5s forwards;
+    }
+    
+    .name {
+      animation: flyFromLeft .5s ease 2s backwards;
+    }
+  
+    .description {
+      animation: flyFromRight .5s ease 2.5s backwards;
+    }
+  
+    .projects-button {
+      animation: flyFromBottom .5s ease 3s backwards;
+    }
+  }
+}
+
 @font-face {
   font-family: 'Inter';
   src: url('./fonts/Inter.ttf') format("truetype-variations");

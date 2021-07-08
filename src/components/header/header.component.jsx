@@ -11,8 +11,8 @@ import photo560square from '../../assets/photo560square.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faAddressCard, faCode, faEnvelope, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
-const Header = ({ changeColorScheme, colorScheme, homeScroll, aboutScroll, projectsScroll, contactScroll, animation }) => (
-  <header className={`header ${animation ? 'runHeaderAnimation' : null}`}>
+const Header = ({ changeColorScheme, colorScheme, homeScroll, aboutScroll, projectsScroll, contactScroll }) => (
+  <header className={`header runHeaderAnimation`}>
     <a className="logo" href="https://www.linkedin.com/in/quentin-neal-6b257218a/">
       <img className="logo-image" alt="logo" src={photo560square} />
     </a>
