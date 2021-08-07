@@ -14,6 +14,7 @@ body {
     box-sizing: border-box;
     font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
     font-weight: 300;
+    overflow-y: hidden;
 }
 
 .App {
@@ -28,7 +29,14 @@ body {
         @media screen and (min-width: 1201px) {grid-template-columns: 11rem 1fr;}
         @media screen and (min-width: 1441px) {grid-template-columns: 11.5rem 1fr;}
         @media screen and (min-width: 1681px) {grid-template-columns: 12rem 1fr;}
-        @media screen and (min-width: 1921px) {grid-template-columns: 6.3% 1fr;}
+        @media screen and (min-width: 1921px) {grid-template-columns: 13.5rem 1fr;}
+        @media screen and (min-width: 2161px) {grid-template-columns: 15rem 1fr;}
+        @media screen and (min-width: 2401px) {grid-template-columns: 16.5rem 1fr;}
+        @media screen and (min-width: 2641px) {grid-template-columns: 18rem 1fr;}
+        @media screen and (min-width: 2881px) {grid-template-columns: 19.5rem 1fr;}
+        @media screen and (min-width: 3121px) {grid-template-columns: 21rem 1fr;}
+        @media screen and (min-width: 3361px) {grid-template-columns: 22.5rem 1fr;}
+        @media screen and (min-width: 3601px) {grid-template-columns: 24rem 1fr;}
     }
 }
 
@@ -97,7 +105,7 @@ a {
     --about-color-1:182, 46, 0;
     --about-color-3: 255, 222, 210;
     --about-color-2: 255, 255, 255;
-    --about-color-1b: 158, 79, 0; // 132, 99, 0;
+    --about-color-1b: 158, 79, 0;
     --about-color-3b: 255, 225, 194;
     --about-color-2b: 255, 255, 255;
 

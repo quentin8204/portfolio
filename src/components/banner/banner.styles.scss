@@ -35,7 +35,6 @@
 }
 
 .banner {
-  //background-color: rgba(var(--home-color-1), 1);
   background: linear-gradient(to top right, rgba(var(--home-color-1), 1), rgba(var(--home-color-1b), 1));
   position: relative;
   overflow: hidden;
@@ -49,10 +48,8 @@
   }
 
   .color-overlay {
-    position: absolute;
-    //background-color: rgba(var(--home-color-1), var(--home-transparency));
     background: linear-gradient(to top right, rgba(var(--home-color-1), var(--home-transparency)), rgba(var(--home-color-1b), var(--home-transparency)));
-
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -62,20 +59,16 @@
     align-items: center;
 
     .heading {
-      //color: rgba(var(--home-color-3), 1);
       display: flex;
       flex-direction: column;
-      align-items: center;
 
       .name {
         background: linear-gradient(to top right, rgba(var(--home-color-2), 1), rgba(var(--home-color-2b), 1));
         color: transparent;
         background-clip: text;
         filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .5));
-
+        transform: translateX(-100vw);
         font-weight: 600;
-        
-
         font-size: 4.5rem;
 
         @media screen and (min-width: 481px) {font-size: 5.8rem;}
@@ -104,28 +97,26 @@
         color: transparent;
         background-clip: text;
         filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .4));
-
-        font-weight: 350;
-        
-
+        transform: translateX(100vw);
+        font-weight: 300;
         font-size: 2.3rem;
-        letter-spacing: 0.5rem; 
-        margin-left: 0.9rem;
+        text-align: center;
+        letter-spacing: .3rem;
 
-        @media screen and (min-width: 481px) {font-size: 2.9rem; letter-spacing: 0.6rem; margin-left: 1.1rem}
-        @media screen and (min-width: 721px) {font-size: 3.2rem; letter-spacing: 0.7rem; margin-left: 1.2rem}
-        @media screen and (min-width: 961px) {font-size: 3.5rem; letter-spacing: 0.8rem; margin-left: 1.3rem}
-        @media screen and (min-width: 1201px) {font-size: 3.9rem; letter-spacing: 0.9rem; margin-left: 1.5rem}
-        @media screen and (min-width: 1441px) {font-size: 4.2rem; letter-spacing: 0.9rem; margin-left: 1.6rem}
-        @media screen and (min-width: 1681px) {font-size: 4.5rem; letter-spacing: 1rem; margin-left: 1.7rem}
-        @media screen and (min-width: 1921px) {font-size: 5.1rem; letter-spacing: 1.1rem; margin-left: 1.9rem}
-        @media screen and (min-width: 2161px) {font-size: 5.6rem; letter-spacing: 1.3rem; margin-left: 2.1rem}
-        @media screen and (min-width: 2401px) {font-size: 6.2rem; letter-spacing: 1.4rem; margin-left: 2.3rem}
-        @media screen and (min-width: 2641px) {font-size: 6.8rem; letter-spacing: 1.5rem; margin-left: 2.6rem}
-        @media screen and (min-width: 2881px) {font-size: 7.3rem; letter-spacing: 1.6rem; margin-left: 2.8rem}
-        @media screen and (min-width: 3121px) {font-size: 7.9rem; letter-spacing: 1.8rem; margin-left: 3rem}
-        @media screen and (min-width: 3361px) {font-size: 8.4rem; letter-spacing: 1.9rem; margin-left: 3.2rem}
-        @media screen and (min-width: 3601px) {font-size: 9rem; letter-spacing: 2rem; margin-left: 3.4rem}
+        @media screen and (min-width: 481px) {font-size: 2.9rem; letter-spacing: .3rem;}
+        @media screen and (min-width: 721px) {font-size: 3.2rem; letter-spacing: .3rem;}
+        @media screen and (min-width: 961px) {font-size: 3.5rem; letter-spacing: .3rem;}
+        @media screen and (min-width: 1201px) {font-size: 3.9rem; letter-spacing: .3rem;}
+        @media screen and (min-width: 1441px) {font-size: 4.2rem; letter-spacing: .3rem;}
+        @media screen and (min-width: 1681px) {font-size: 4.5rem; letter-spacing: .4rem;}
+        @media screen and (min-width: 1921px) {font-size: 5.1rem; letter-spacing: .4rem;}
+        @media screen and (min-width: 2161px) {font-size: 5.6rem; letter-spacing: .5rem;}
+        @media screen and (min-width: 2401px) {font-size: 6.2rem; letter-spacing: .5rem;}
+        @media screen and (min-width: 2641px) {font-size: 6.8rem; letter-spacing: .6rem;}
+        @media screen and (min-width: 2881px) {font-size: 7.3rem; letter-spacing: .6rem;}
+        @media screen and (min-width: 3121px) {font-size: 7.9rem; letter-spacing: .7rem;}
+        @media screen and (min-width: 3361px) {font-size: 8.4rem; letter-spacing: .7rem;}
+        @media screen and (min-width: 3601px) {font-size: 9rem; letter-spacing: .8rem;}
 
         &::selection {
           background-color: rgba(var(--home-color-2), 1);
@@ -134,27 +125,20 @@
       }
 
       .projects-button {
-        border-radius: 8rem;
+        border-radius: 8rem;//8rem 20%/50%
         font-weight: 600;
-        //background: linear-gradient(to top right, rgba(var(--home-color-3), 1), rgba(var(--home-color-3b), 1));
-        color: transparent;
-        background-clip: text;
         transition: transform .2s ease;
-        text-decoration: none;
-        transform: translateY(0rem);
         position: relative;
         overflow: hidden;
-        display: none;
         filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .4));
-        
-
         padding: 1.3rem;
         margin-top: 2.3rem;
         border: 3px solid rgba(var(--home-color-2), 1);
         font-size: 1.3rem;
+        margin: 0 auto;
+        display: none;
 
-        @media screen and (min-height: 481px) {display: initial;}
-
+        @media screen and (min-height: 481px) {display: initial;} //divided first half by 7 which includes a removed roughly 200 width
         @media screen and (min-width: 481px) {padding: 1.5rem; margin-top: 2.6rem; border: 3px solid rgba(var(--home-color-2), 1); font-size: 1.5rem;}
         @media screen and (min-width: 721px) {padding: 1.6rem; margin-top: 2.9rem; border: 4px solid rgba(var(--home-color-2), 1); font-size: 1.6rem;}
         @media screen and (min-width: 961px) {padding: 1.6rem; margin-top: 3.1rem; border: 4px solid rgba(var(--home-color-2), 1); font-size: 1.6rem;}
@@ -184,7 +168,7 @@
         &::before {
           content: "";
           position: absolute;
-          background-color: rgba(var(--home-color-1), .6);
+          background: linear-gradient(to top right, rgba(var(--home-color-1), 1), rgba(var(--home-color-1b), .6));
           top: 0;
           left: -60%;
           right: -60%;
@@ -196,11 +180,6 @@
         }
 
         &:hover {
-          //background: linear-gradient(to top right, rgba(var(--home-color-3), 1), rgba(var(--home-color-3b), 1));
-          //color: transparent;
-          //background-clip: text;
-          //border-color: rgba(var(--home-color-3), 1);
-          //transition: color .2s ease, border-color .2s ease;
 
           &::before {
             transform: translateY(0);
@@ -208,9 +187,8 @@
           }
         }
 
-        &:focus {
+        &:active {
           transform: translateY(0.4rem);
-          
         }
       }
     }

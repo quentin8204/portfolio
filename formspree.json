@@ -2,7 +2,7 @@
   "forms": {
     "contactMe": {
       "name": "Contact Me",
-      "actions": [{ "type": "email", "to": "quentin8204@outlook.com" }],
+      "actions": [{ "type": "email", "to": "quentinneal@outlook.com" }],
       "fields": {
         "email": {
           "required": true

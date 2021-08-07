@@ -13,8 +13,10 @@ const About = ({aboutRef}) => (
     <h2 className="title">About</h2>
     <div className="bio">
       <a className="bio-image-background" href="https://www.linkedin.com/in/quentin-neal-6b257218a/" target="_blank" rel="noopener noreferrer">
-          <img className="bio-image" alt=""/> {/* redesign to add alt text */}
-          <div className="color-overlay"><FontAwesomeIcon className="fa-fw" icon={faLinkedin} /></div>
+        <img className="bio-image" alt=""/> {/* redesign to add alt text */}
+        <div className="color-overlay">
+          <FontAwesomeIcon className="fa-fw" icon={faLinkedin} />
+        </div>
       </a>
       <div className="bio-description">
         <p>Hello! I am a Software Engineer in Seattle that specializes in font end web development. I particularly love CSS the most and

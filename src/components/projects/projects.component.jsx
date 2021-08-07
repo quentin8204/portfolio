@@ -4,6 +4,7 @@ import React, { useState } from "react";
 // Styles
 import './projects.styles.scss';
 
+// Images
 import crwnClothing960 from '../../assets/crwnClothing960.jpg';
 import crwnClothing1280 from '../../assets/crwnClothing1280.jpg';
 import crwnClothing1600 from '../../assets/crwnClothing1600.jpg';

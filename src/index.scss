@@ -34,10 +34,6 @@
   display: none;
 }
 
-body {
-  overflow-y: hidden;
-}
-
 .showScrollbar {
   overflow-y: visible;
 }
@@ -62,15 +58,15 @@ body {
   .runBannerAnimation {
 
     .background {
-      animation: zoomIn 20s linear 1.5s forwards;
+      animation: zoomIn 20s linear 1.5s both;
     }
     
     .name {
-      animation: flyFromLeft .5s ease 2s backwards;
+      animation: flyFromLeft .5s ease 2s both;
     }
   
     .description {
-      animation: flyFromRight .5s ease 2.5s backwards;
+      animation: flyFromRight .5s ease 2.5s both;
     }
   
     .projects-button {

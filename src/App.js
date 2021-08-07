@@ -40,7 +40,7 @@ const App = () => {
 
   }, []);
 
-  // Smooth scrolling
+  // Smooth scrolling (css solution shows bugs on some browsers)
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
