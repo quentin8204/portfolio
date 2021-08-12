@@ -19,11 +19,12 @@ const About = ({aboutRef}) => (
         </div>
       </a>
       <div className="bio-description">
-        <p>Hello! I am a Software Engineer in Seattle that specializes in font end web development. I particularly love CSS the most and
-         enjoy pushing my limits and experimenting with effective and modern user interfaces. I also enjoy all of the other web technologies
-          which I am committed to learn until mastery.</p>
-        <p>I also have many years of experience in customer service roles to complement my software engineering skills. I am looking forward 
-        to working with others to help solve problems.</p>
+      <p>Hello! I am a Software Engineer in Seattle that specializes in font end web development. 
+      I enjoy pushing my limits and experimenting with effective and modern user interfaces. 
+      I am now committed to learn about all the web technologies until mastery.</p>
+
+      <p>I also have many years of experience in customer service roles where I developed my communication and teamwork skills. 
+      I am looking forward to working with others to help solve problems.</p>
       </div>
     </div>
     <div className="skills">

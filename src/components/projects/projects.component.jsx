@@ -45,11 +45,12 @@ const Projects = ({projectsRef}) => {
         image10: crwnClothing3840
       },
       title: 'Crwn-Clothing',
-      technologies: ['1080p', 'HTML5', 'CSS / SCSS', 'Javascript', 'React', 'React Router', 'Stripe', 'Redux libraries', 'Redux-Saga', 'Firebase', 'Reselect'],
-      description: `<p>I created this project based off a course called Complete React Developer by Andrei Neagoie.</p>
-      <p>I worked on this project in order to gain general knowledge of the current web development environment and to brush up on my coding skills. This website has functionality such as sign in/out, sign up, cart functionality and checkout with stripe and more.</p>
-      <p>I decide to push this project further by overhauling the look of the site with CSS. I added a fixed menu for easy menu access, used a dark color scheme that fits with the image assets, added animations and made the site responsive to 1080p resolution.</p>
-      <p>Future plans are to improve responsiveness, aesthetics, refactor, and expand/add more JavaScript features.</p>`,
+      technologies: ['1080p', 'HTML5', 'CSS3 / SCSS', 'Javascript', 'React', 'React Router', 'Stripe', 'Redux technologies', 'Firebase', 'Reselect', 'Compression', 'Lodash.memoise', 'Node', 'Npm', 'GitHub', 'Git'],
+      description: `<p>I created this project based off a course called Complete React Developer by Andrei Neagoie and Yihua Zhang.</p>
+      <p>I worked on this project in order to gain general knowledge of the current web development environment and to brush up on my coding skills. 
+      This website has functionality such as sign in/out, sign up, cart functionality, checkout with stripe and more.</p>
+      <p>I decide to push this project further by overhauling the site's aesthetics. 
+      I added a fixed menu for easy menu access, used a dark color scheme that fits with the image assets, added animations and made the site responsive.</p>`,
       sources: {
         demo: 'https://crwn-live-quentin.herokuapp.com/',
         github: 'https://github.com/quentin8204/crwn-clothing',
@@ -73,12 +74,11 @@ const Projects = ({projectsRef}) => {
         image10: portfolio3840
       },
       title: 'Portfolio',
-      technologies: ['4K', 'HTML5', 'CSS / SCSS', 'Javascript', 'React', 'Formspree', 'Font Awesome'],
-      description: `<p>I recently created this website to show my projects and my creativity.</p>
-      <p>I decided to make this website a single page since I didn't believe it was necessary to have different loading pages for a small website. 
-      This website has a bottom fixed navigation menu on smaller mobile devices to improve the user experience. 
-      This website supports resolutions up to 4k. The contact form functionality was made with Formspree.</p>
-      <p>Future plans are to improve responsiveness, aesthetics, refactor and to get deeper with building contact form functionality.</p>`,
+      technologies: ['4K', 'HTML5', 'CSS / SCSS', 'Javascript', 'React', 'Formspree', 'Font Awesome', 'Node', 'Npm', 'GitHub', 'Git'],
+      description: `<p>I recently created this website to show my projects and my perspective on user interfaces.</p>
+      <p>I decided to make this website a single page since I didn't believe it was necessary to have separate pages for a small website. 
+      This responsive website has a bottom fixed navigation menu on smaller mobile devices to improve the user experience, 
+      a preloader to improve the website presentation, and contact form functionality made with Formspree.</p>`,
       sources: {
         demo: 'https://portfolio-live-quentin.herokuapp.com/',
         github: 'https://github.com/quentin8204/portfolio'

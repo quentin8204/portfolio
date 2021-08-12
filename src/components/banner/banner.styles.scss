@@ -135,7 +135,8 @@
         margin-top: 2.3rem;
         border: 3px solid rgba(var(--home-color-2), 1);
         font-size: 1.3rem;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
         display: none;
 
         @media screen and (min-height: 481px) {display: initial;} //divided first half by 7 which includes a removed roughly 200 width
