@@ -2,4 +2,4 @@
 
 Portfolio website to display projects.
 
-[Quentinneal.com](Quentinneal.com)
+[Quentinneal.com](https://quentinneal.com/)
