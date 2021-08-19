@@ -113,7 +113,8 @@ const Projects = ({projectsRef}) => {
           ${images.image8} 2560w,
           ${images.image9} 2880w,
           ${images.image10} 3200w,
-          ${images.image11} 3520w`}
+          ${images.image11} 3520w,
+          ${images.image12} 3840w`}
           src={images.image12}
           alt={alt}
         />

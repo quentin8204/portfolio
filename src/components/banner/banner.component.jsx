@@ -8,6 +8,8 @@ import './banner.styles.scss';
 import Div100vh from 'react-div-100vh';
 
 // Responsive images import
+import puntaSir320 from '../../assets/puntaSir320.jpg';
+import puntaSir640 from '../../assets/puntaSir640.jpg';
 import puntaSir960 from '../../assets/puntaSir960.jpg';
 import puntaSir1280 from '../../assets/puntaSir1280.jpg';
 import puntaSir1600 from '../../assets/puntaSir1600.jpg';
@@ -25,16 +27,18 @@ const Banner = ({homeRef, projectsScroll}) => (
       className="background"
       sizes="(max-width: 3840px) 100vw, 3840px"
       srcSet={`
-      ${puntaSir960} 320w,
-      ${puntaSir1280} 640w,
-      ${puntaSir1600} 960w,
-      ${puntaSir1920} 1280w,
-      ${puntaSir2240} 1600w,
-      ${puntaSir2560} 1920w,
-      ${puntaSir2880} 2240w,
-      ${puntaSir3200} 2560w,
-      ${puntaSir3520} 2880w,
-      ${puntaSir3840} 3200w`}
+      ${puntaSir320} 320w,
+      ${puntaSir640} 640w,
+      ${puntaSir960} 960w,
+      ${puntaSir1280} 1280w,
+      ${puntaSir1600} 1600w,
+      ${puntaSir1920} 1920w,
+      ${puntaSir2240} 2240w,
+      ${puntaSir2560} 2560w,
+      ${puntaSir2880} 2880w,
+      ${puntaSir3200} 3200w,
+      ${puntaSir3520} 3520w,
+      ${puntaSir3840} 3840w`}
       src={puntaSir3840}
       alt="Punta Sir"
     />
