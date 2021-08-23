@@ -11,10 +11,10 @@ import photo560square from '../../assets/photo560square.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faAddressCard, faCode, faEnvelope, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
-const Header = ({ changeColorScheme, colorScheme, homeScroll, aboutScroll, projectsScroll, contactScroll }) => (
+const Header = ({ logoLoaded, changeColorScheme, colorScheme, homeScroll, aboutScroll, projectsScroll, contactScroll }) => (
   <header className={`header runHeaderAnimation`}>
     <a className="logo" href="https://www.linkedin.com/in/quentin-neal-6b257218a/">
-      <img className="logo-image" alt="logo" src={photo560square} />
+      <img className="logo-image" alt="logo" src={photo560square} onLoad={logoLoaded}/>
     </a>
     <div className="menu">
       <nav className="navigation">

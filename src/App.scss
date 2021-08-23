@@ -1,3 +1,76 @@
+.introAnimation + .App {
+
+  .runHeaderAnimation {
+    animation: navSlideUp 1s ease both;
+  }
+  
+  @media screen and (min-width: 961px) and (min-height: 721px)  {
+
+    .runHeaderAnimation {
+      animation: navSlideRight 1s ease both;
+    }
+  }
+  
+  .runContentAnimation {
+    animation: fadeInContent 1s ease 1.5s both;
+  }
+
+  .runBannerAnimation {
+
+    .background {
+      animation: zoomIn 20s linear 1.5s both;
+    }
+    
+    .name {
+      animation: flyFromLeft .5s ease 2s both;
+    }
+  
+    .description {
+      animation: flyFromRight .5s ease 2.5s both;
+    }
+  
+    .projects-button {
+      animation: flyFromBottom .5s ease 3s backwards;
+    }
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);}
+}
+  
+.spinner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: rgba(var(--menu-color), 1);
+
+  .spinner-object {
+    animation: spin 1s linear infinite both;
+    border: .4rem solid;
+    border-color: rgba(var(--outline-color), .1);
+    border-top-color: rgba(var(--home-color-1), 1);
+    border-bottom-color: rgba(var(--home-color-1), 1);
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+
+    @media screen and (min-width: 961px) {border: .6rem solid; border-color: rgba(var(--outline-color), .1); border-top-color: rgba(var(--spinner-color), 1); border-bottom-color: rgba(var(--spinner-color), 1); width: 14rem; height: 14rem;}
+    @media screen and (min-width: 1921px) {border: .4vw solid; border-color: rgba(var(--outline-color), .1); border-top-color: rgba(var(--spinner-color), 1); border-bottom-color: rgba(var(--spinner-color), 1); width: 8vw; height: 8vw;}
+  }
+}
+
+.hide-spinner {
+  display: none;
+}
+
 *,
 *::after,
 *::before {
@@ -14,7 +87,7 @@ body {
     box-sizing: border-box;
     font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
     font-weight: 300;
-    overflow-y: hidden;
+    //overflow-y: hidden;
 }
 
 .App {
@@ -94,8 +167,8 @@ a {
 
     --home-menu-color: 0, 111, 223;
     --home-color-1: 0, 0, 232;
-    --home-color-3: 255, 255, 255;
     --home-color-2: 255, 255, 255;
+    --home-color-3: 255, 255, 255;
     --home-color-1b: 0, 89, 178;
     --home-color-3b: 255, 255, 255;
     --home-color-2b: 255, 255, 255;
@@ -103,16 +176,16 @@ a {
 
     --about-menu-color: 227, 57, 0;
     --about-color-1:182, 46, 0;
-    --about-color-3: 255, 222, 210;
     --about-color-2: 255, 255, 255;
+    --about-color-3: 255, 222, 210;
     --about-color-1b: 158, 79, 0;
     --about-color-3b: 255, 225, 194;
     --about-color-2b: 255, 255, 255;
 
     --projects-menu-color: 124, 0, 248;
     --projects-color-1:99, 0, 198;
-    --projects-color-3: 236, 216, 255;
     --projects-color-2: 255, 255, 255;
+    --projects-color-3: 236, 216, 255;
     --projects-color-4: 181, 0, 181;
     --projects-color-5: 255, 255, 255;
     --projects-color-1b: 144, 0, 144;
@@ -122,8 +195,8 @@ a {
     --projects-color-5b: 255, 255, 255;
 
         --blue-project-color-1: 0, 0, 232;
-        --blue-project-color-3: 223, 223, 255;
         --blue-project-color-2: 255, 255, 255;
+        --blue-project-color-3: 223, 223, 255;
         --blue-project-color-4: 0, 111, 223;
         --blue-project-color-5: 255, 255, 255;
         --blue-project-color-1b: 0, 89, 178;
@@ -134,8 +207,8 @@ a {
 
     --contact-menu-color: 214, 0, 107;
     --contact-color-1: 184, 0, 46;
-    --contact-color-3: 255, 216, 226;
     --contact-color-2: 255, 255, 255;
+    --contact-color-3: 255, 216, 226;
     --contact-color-1b: 158, 0, 119;
     --contact-color-3b: 255, 209, 243;
     --contact-color-2b: 255, 255, 255;
@@ -149,6 +222,8 @@ a {
     --menu-shadow-contact: -2px 2px 1px rgba(0, 0, 0, .5);
     --menu-shadow-light: -2px 2px 1px rgba(0, 0, 0, .5);
     --menu-shadow-dark: -2px 2px 1px rgba(0, 0, 0, .5);
+
+    --spinner-color: 0, 0, 232;
 }
 
 .dark {
@@ -219,6 +294,8 @@ a {
     --menu-shadow-contact: 0px 0px 10px rgba(var(--menu-shadow-contact-color));
     --menu-shadow-light: 0px 0px 10px rgba(var(--menu-shadow-light-color));
     --menu-shadow-dark: 0px 0px 10px rgba(var(--menu-shadow-dark-color));
+
+    --spinner-color: 0, 255, 255;
     }
 /*
 /*

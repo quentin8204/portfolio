@@ -27,11 +27,9 @@
     <title>Quentin Neal | Software Engineer Portfolio</title>
   </head>
 
-  <body id="body" onload="onLoad();">
+  <body id="body">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="spinner" class="spinner">
-      <div class="spinner-object"></div>
-    </div>
+    
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -44,10 +42,6 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script>
-      function onLoad() {
-        const spinner = document.getElementById("spinner"); spinner.classList.add("hide-spinner", "introAnimation");
-        const body = document.getElementById("body"); body.classList.add("showScrollbar");
-      }
     </script>
   </body>
 </html>
