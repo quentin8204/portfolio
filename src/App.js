@@ -20,11 +20,11 @@ const App = () => {
 
   // Logo and banner images. Functions run when images are loaded.
     const logoLoaded = () => {
-      setLogoImageLoaded(true)
+      setLogoImageLoaded(true);
     }
 
     const bannerLoaded = () => {
-      setBannerImageLoaded(true)
+      setBannerImageLoaded(true);
     }
 
   // Dark mode
@@ -65,7 +65,7 @@ const App = () => {
 
   return (
     <FormspreeProvider project="1628451151437364529">
-      <div id="spinner" className={`spinner ${darkMode ? 'dark' : 'light'} ${logoImageLoaded && bannerImageLoaded ? 'hide-spinner introAnimation' : null}`}>
+      <div id="spinner" className={`spinner ${darkMode ? 'dark' : 'light'} ${logoImageLoaded && bannerImageLoaded ? 'hide-spinner' : 'pauseAnimation'}`}>
         <div className="spinner-object"></div>
       </div>
       <div className={`App ${darkMode ? 'dark' : 'light'} ${mouseUser ? 'mousedown' : 'keydown'}`}>

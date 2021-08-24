@@ -16,6 +16,17 @@
   }
 }
 
+.runHeaderAnimation {
+  animation: navSlideUp 1s ease both;
+}
+
+@media screen and (min-width: 961px) and (min-height: 721px)  {
+
+  .runHeaderAnimation {
+    animation: navSlideRight 1s ease both;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;

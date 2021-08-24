@@ -1,38 +1,10 @@
-.introAnimation + .App {
+.pauseAnimation + .App * {
 
-  .runHeaderAnimation {
-    animation: navSlideUp 1s ease both;
-  }
+  animation-play-state: paused !important;
   
-  @media screen and (min-width: 961px) and (min-height: 721px)  {
+  
 
-    .runHeaderAnimation {
-      animation: navSlideRight 1s ease both;
-    }
-  }
   
-  .runContentAnimation {
-    animation: fadeInContent 1s ease 1.5s both;
-  }
-
-  .runBannerAnimation {
-
-    .background {
-      animation: zoomIn 20s linear 1.5s both;
-    }
-    
-    .name {
-      animation: flyFromLeft .5s ease 2s both;
-    }
-  
-    .description {
-      animation: flyFromRight .5s ease 2.5s both;
-    }
-  
-    .projects-button {
-      animation: flyFromBottom .5s ease 3s backwards;
-    }
-  }
 }
 
 @keyframes spin {

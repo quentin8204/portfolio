@@ -7,6 +7,10 @@
     }
 }
 
+.runContentAnimation {
+    animation: fadeInContent 1s ease 1.5s both;
+  }
+
 .content {
     opacity: 0;
     order: -1;

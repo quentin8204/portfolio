@@ -5,31 +5,8 @@ import React, { useState } from "react";
 import './projects.styles.scss';
 
 // Images
-import crwnClothing320 from '../../assets/crwnClothing320.jpg';
-import crwnClothing640 from '../../assets/crwnClothing640.jpg';
-import crwnClothing960 from '../../assets/crwnClothing960.jpg';
-import crwnClothing1280 from '../../assets/crwnClothing1280.jpg';
-import crwnClothing1600 from '../../assets/crwnClothing1600.jpg';
-import crwnClothing1920 from '../../assets/crwnClothing1920.jpg';
-import crwnClothing2240 from '../../assets/crwnClothing2240.jpg';
-import crwnClothing2560 from '../../assets/crwnClothing2560.jpg';
-import crwnClothing2880 from '../../assets/crwnClothing2880.jpg';
-import crwnClothing3200 from '../../assets/crwnClothing3200.jpg';
-import crwnClothing3520 from '../../assets/crwnClothing3520.jpg';
-import crwnClothing3840 from '../../assets/crwnClothing3840.jpg';
-
-import portfolio320 from '../../assets/portfolio320.jpg';
-import portfolio640 from '../../assets/portfolio640.jpg';
-import portfolio960 from '../../assets/portfolio960.jpg';
-import portfolio1280 from '../../assets/portfolio1280.jpg';
-import portfolio1600 from '../../assets/portfolio1600.jpg';
-import portfolio1920 from '../../assets/portfolio1920.jpg';
-import portfolio2240 from '../../assets/portfolio2240.jpg';
-import portfolio2560 from '../../assets/portfolio2560.jpg';
-import portfolio2880 from '../../assets/portfolio2880.jpg';
-import portfolio3200 from '../../assets/portfolio3200.jpg';
-import portfolio3520 from '../../assets/portfolio3520.jpg';
-import portfolio3840 from '../../assets/portfolio3840.jpg';
+import { crwnClothing320, crwnClothing640, crwnClothing960, crwnClothing1280, crwnClothing1600, crwnClothing1920, crwnClothing2240, crwnClothing2560, crwnClothing2880, crwnClothing3200, crwnClothing3520, crwnClothing3840} from './image.export';
+import { portfolio320, portfolio640, portfolio960, portfolio1280, portfolio1600, portfolio1920, portfolio2240, portfolio2560, portfolio2880, portfolio3200, portfolio3520, portfolio3840} from './image.export';
 
 const Projects = ({projectsRef}) => {
 
