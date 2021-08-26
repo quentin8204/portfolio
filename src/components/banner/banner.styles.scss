@@ -37,19 +37,19 @@
 .runBannerAnimation {
 
   .background {
-    animation: zoomIn 20s linear 1.5s both;
+    animation: zoomIn 20s linear 1.7s both;
   }
   
   .name {
-    animation: flyFromLeft .5s ease 2s both;
+    animation: flyFromLeft .5s ease 2.2s both;
   }
 
   .description {
-    animation: flyFromRight .5s ease 2.5s both;
+    animation: flyFromRight .5s ease 2.7s both;
   }
 
   .projects-button {
-    animation: flyFromBottom .5s ease 3s backwards;
+    animation: flyFromBottom .5s ease 3.2s backwards;
   }
 }
 

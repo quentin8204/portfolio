@@ -17,13 +17,13 @@
 }
 
 .runHeaderAnimation {
-  animation: navSlideUp 1s ease both;
+  animation: navSlideUp 1s ease 0.2s both;
 }
 
 @media screen and (min-width: 961px) and (min-height: 721px)  {
 
   .runHeaderAnimation {
-    animation: navSlideRight 1s ease both;
+    animation: navSlideRight 1s ease 0.2s both;
   }
 }
 
