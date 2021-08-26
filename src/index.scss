@@ -1,12 +1,3 @@
-@font-face {
-  font-family: 'Inter';
-  font-weight: 1 999;
-  font-display: swap;
-  unicode-range: U+0020-007F;
-  src: url('./fonts/Inter.woff2') format("truetype-variations"),
-       url('./fonts/Inter.woff') format("truetype-variations");
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
