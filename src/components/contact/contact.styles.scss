@@ -217,6 +217,8 @@
         font-weight: 600;
         filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .6));
         transition: color 0.2s ease;
+        position: relative;
+        z-index: 1;
         
         font-size: 1.6rem;
         padding: 1rem;
@@ -241,7 +243,10 @@
         &::before {
           position: absolute;
           content: '';
-          inset: 0;
+          top: 0;
+          left: 0;
+          right:0;
+          bottom: 0;
           background: linear-gradient(to top right, rgba(var(--contact-color-3), 1), rgba(var(--contact-color-3b), 1));
           z-index: -1;
           transition: opacity 0.2s ease;

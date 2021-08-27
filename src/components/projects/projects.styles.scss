@@ -224,6 +224,8 @@
           background-clip: text;
           filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .6));
           transition: color 0.2s ease;
+          position: relative;
+          z-index: 1;
 
           font-size: 1.8rem;
           padding: 1.7rem;
@@ -251,7 +253,10 @@
           &::before {
             position: absolute;
             content: '';
-            inset: 0;
+            top: 0;
+            left: 0;
+            right:0;
+            bottom: 0;
             background: linear-gradient(to top right, rgba(var(--projects-color-3), 1), rgba(var(--projects-color-3b), 1));
             z-index: -1;
             transition: opacity 0.2s ease;
@@ -359,10 +364,6 @@
 
           &:hover {
             color: rgba(var(--blue-project-color-1), 1);
-
-            &::before {
-
-            }
           }
         }
       }
