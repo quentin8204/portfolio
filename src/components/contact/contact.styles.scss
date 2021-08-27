@@ -33,8 +33,8 @@
   @media screen and (min-width: 3601px) {padding: 24rem;}
 
   .title {
-    font-weight: 600;
-    filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .5));
+    font-weight: 650;
+    filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .6));
     background: linear-gradient(to top right, rgba(var(--contact-color-2), 1), rgba(var(--contact-color-2b), 1));
     color: transparent;
     background-clip: text;
@@ -215,7 +215,8 @@
 
       .form-button {
         font-weight: 600;
-        filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .5));
+        filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .6));
+        transition: color 0.2s ease;
         
         font-size: 1.6rem;
         padding: 1rem;
@@ -237,15 +238,28 @@
         @media screen and (min-width: 3361px) {font-size: 3.4rem; padding: 3.2rem; border: 4px solid rgba(var(--contact-color-3), 1); margin-left: 1.9rem;}
         @media screen and (min-width: 3601px) {font-size: 3.6rem; padding: 3.4rem; border: 4px solid rgba(var(--contact-color-3), 1); margin-left: 2rem;}
 
+        &::before {
+          position: absolute;
+          content: '';
+          inset: 0;
+          background: linear-gradient(to top right, rgba(var(--contact-color-3), 1), rgba(var(--contact-color-3b), 1));
+          z-index: -1;
+          transition: opacity 0.2s ease;
+          opacity: 0;
+        }
+
         &::selection {
           background-color: rgba(var(--contact-color-2), 1);
           color:  rgba(var(--contact-color-1), 1);
         }
 
         &:hover {
-          background: linear-gradient(to top right, rgba(var(--contact-color-3), 1), rgba(var(--contact-color-3b), 1));
           color: rgba(var(--contact-color-1), 1);
           cursor: pointer;
+
+          &::before {
+            opacity: 1;
+          }
         }
       }
     }
@@ -349,7 +363,7 @@
 
         svg {
           color: rgba(var(--contact-color-2), 1);
-          filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .4));
+          filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .6));
 
           font-size: 2.3rem;
           margin: 0 0.6rem 0 0;
@@ -416,7 +430,7 @@
 
     .title {
       animation: fadeInMessage 4s ease;
-      filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .5));
+      filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, .6));
       font-weight: 600;
       background: linear-gradient(to top right, rgba(var(--contact-color-2), 1), rgba(var(--contact-color-2b), 1));
       color: transparent;

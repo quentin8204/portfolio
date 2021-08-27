@@ -129,7 +129,7 @@
           svg {
             color: rgba(var(--menu-color), 1);
             transform: perspective(40rem) rotateY(360deg);
-            filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, .5));
+            filter: drop-shadow(-.03em .03em 1px rgba(0, 0, 0, .6));
             transition: transform .5s ease-in-out, color .2s ease-in-out;
           }
 

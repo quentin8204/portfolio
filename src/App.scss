@@ -188,12 +188,12 @@ a {
     --dark-mode-menu-color: 128, 128, 128;
     --light-mode-menu-color: 218, 218, 0;
 
-    --menu-shadow-home: -2px 2px 1px rgba(0, 0, 0, .5);
-    --menu-shadow-about: -2px 2px 1px rgba(0, 0, 0, .5);
-    --menu-shadow-projects: -2px 2px 1px rgba(0, 0, 0, .5);
-    --menu-shadow-contact: -2px 2px 1px rgba(0, 0, 0, .5);
-    --menu-shadow-light: -2px 2px 1px rgba(0, 0, 0, .5);
-    --menu-shadow-dark: -2px 2px 1px rgba(0, 0, 0, .5);
+    --menu-shadow-home: -.03em .03em 1px rgba(0, 0, 0, .6);
+    --menu-shadow-about: -.03em .03em 1px rgba(0, 0, 0, .6);
+    --menu-shadow-projects: -.03em .03em 1px rgba(0, 0, 0, .6);
+    --menu-shadow-contact: -.03em .03em 1px rgba(0, 0, 0, .6);
+    --menu-shadow-light: -.03em .03em 1px rgba(0, 0, 0, .6);
+    --menu-shadow-dark: -.03em .03em 1px rgba(0, 0, 0, .6);
 
     --spinner-color: 0, 0, 232;
 }
